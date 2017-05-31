@@ -1,2 +1,3 @@
-# UKCP18_CVs
-UKCP18 Controlled Vocabularies
+# UKCP18 CVs
+Controlled Vocabularies (CVs) for use in UKCP18
+
