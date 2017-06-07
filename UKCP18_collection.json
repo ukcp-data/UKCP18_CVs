@@ -1,0 +1,15 @@
+{
+    "collection":{
+        "LS1":"Land Strand 1",
+        "LS2":"Land Strand 2",
+        "LS3":"Land Strand 3",
+        "MS":"Marine Strand",
+        "OB":"Observations"
+	},
+    "version_metadata":{
+        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
+        "institution_id":"STFC",
+        "previous_commit":""
+    }
+}
