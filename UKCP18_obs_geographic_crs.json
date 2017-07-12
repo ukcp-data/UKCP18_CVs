@@ -1,0 +1,18 @@
+{
+    "geographic_crs": {
+        "4277": {
+            "epsg": 4277,
+            "inverse_flattening": "",
+            "name": "OSGB 1936",
+            "prime_meridian": 0,
+            "semi_major_axis": "",
+            "semi_minor_axis": ""
+        }
+    },
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Tue Jun 06 07:45:06 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "grid_properties": {
+        "gear_1km": {
+            "epsg_code": 27700,
+            "grid_name": "gear_1km",
+            "mask": "None",
+            "point_lta": "N",
+            "resolution": 1000,
+            "x_max": 700500,
+            "x_min": -500,
+            "y_max": 1250500,
+            "y_min": -500
+        },
+        "uk_1km": {
+            "epsg_code": 27700,
+            "grid_name": "uk_1km",
+            "mask": "/project/ncic/NCIC/Climate_Grid/resources/masks/area_of_interest/uk/uk_1km",
+            "point_lta": "Y",
+            "resolution": 1000,
+            "x_max": 700000,
+            "x_min": -200000,
+            "y_max": 1250000,
+            "y_min": -200000
+        },
+        "uk_5km": {
+            "epsg_code": 27700,
+            "grid_name": "uk_5km",
+            "mask": "/project/ncic/NCIC/Climate_Grid/resources/masks/area_of_interest/uk/uk_5km",
+            "point_lta": "N",
+            "resolution": 5000,
+            "x_max": 700000,
+            "x_min": -200000,
+            "y_max": 1250000,
+            "y_min": -200000
+        }
+    },
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Tue Jun 06 07:45:06 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}

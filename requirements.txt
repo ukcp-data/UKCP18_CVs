@@ -1,0 +1,6 @@
+###
+# For creating Climate-Grid JSON files
+#
+#pandas
+#simplejson
+#numpy
