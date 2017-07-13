@@ -1,0 +1,15 @@
+{
+	"variable_id":{
+        "temp-max": "Maximum daily temperature",
+        "temp-min": "Minimum daily temperature",
+        "temp-mean": "Mean daily temperature",
+        "precip": "Total daily rainfall",
+        "pressure": "Surface Pressure"
+	},
+    "version_metadata":{
+        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date":"Wed May 17 07:45:06 2017 -0700",
+        "institution_id":"STFC",
+        "previous_commit":""
+    }
+}

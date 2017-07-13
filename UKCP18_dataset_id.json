@@ -1,0 +1,11 @@
+{
+    "datset_id":[
+        "ukcp18-land-prob-25km"
+    ],
+    "version_metadata":{
+        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
+        "institution_id":"STFC",
+        "previous_commit":""
+    }
+}
