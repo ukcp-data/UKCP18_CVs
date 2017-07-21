@@ -10,7 +10,23 @@ We strongly recommend that you use the following recipe for working with these v
 ```
 mkdir vocabs
 cd vocabs/
+```
+
+If you are at the Met Office do:
+
+```
+/usr/local/sci/bin/virtualenv venv
+```
+
+At CEDA/JASMIN, do:
+
+```
 virtualenv venv
+```
+
+And activate the virtual environment with:
+
+```
 source venv/bin/activate
 ```
 
@@ -70,3 +86,42 @@ See examples at:
 
 https://github.com/ES-DOC/pyessv/blob/master/notebooks/pyessv-and-cmip6.ipynb
 
+## Doing the entire install in a script
+
+To do the above in one go, put this in a script (such as `install-vocabs.sh`), give it execute permission, and then run it.
+
+Before you run it, set this environment variable for your `virtualenv` path:
+
+```
+# At CEDA/JASMIN:
+export VIRTUALENV_DIR=/usr/bin
+
+# At the Met Office:
+export VIRTUALENV_DIR=/usr/local/sci/bin
+```
+
+Then run this script:
+
+```
+mkdir vocabs
+cd vocabs/
+${VIRTUALENV_DIR}/virtualenv venv
+source venv/bin/activate
+
+git clone https://github.com/ukcp-data/UKCP18_CVs
+pip install pyessv
+
+git clone https://github.com/ukcp-data/pyessv-writer
+cd pyessv-writer/
+mkdir  -p ~/.esdoc/pyessv-archive
+python sh/write_ukcp18_cvs.py --source=../UKCP18_CVs
+```
+
+Test it with:
+
+```
+$ python
+>>> import pyessv
+>>> insts = pyessv.load('ukcp', 'ukcp18', 'institution-id')
+>>> for i in insts: print i
+```
