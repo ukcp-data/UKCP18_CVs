@@ -16,17 +16,15 @@ If you are at the Met Office do:
 
 ```
 /usr/local/sci/bin/virtualenv venv
+source venv/bin/activate
+pip install --upgrade setuptools
+pip install --upgrade pip
 ```
 
 At CEDA/JASMIN, do:
 
 ```
 virtualenv venv
-```
-
-And activate the virtual environment with:
-
-```
 source venv/bin/activate
 ```
 
@@ -61,26 +59,28 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 insts = pyessv.load('ukcp', 'ukcp18', 'institution-id')
 
-2017-07-13T07:41:35.731509 [INFO] :: ES-DOC PYESSV :: ... loaded: eustace-team
-2017-07-13T07:41:35.732493 [INFO] :: ES-DOC PYESSV :: ... loaded: glamod-team
 2017-07-13T07:41:35.733418 [INFO] :: ES-DOC PYESSV :: ... loaded: ukcp
-2017-07-13T07:41:35.742762 [INFO] :: ES-DOC PYESSV :: ... loaded: wcrp
 >>> insts = pyessv.load('ukcp', 'ukcp18', 'institution-id')
 
 >>> for i in insts: print i
 ...
-ukcp:ukcp18:institution-id:awi
-ukcp:ukcp18:institution-id:bnu
-ukcp:ukcp18:institution-id:cams
-ukcp:ukcp18:institution-id:cccma
-ukcp:ukcp18:institution-id:cccr-iitm
-ukcp:ukcp18:institution-id:cmcc
-...
-ukcp:ukcp18:institution-id:noaa-ncep
-ukcp:ukcp18:institution-id:nuist
-ukcp:ukcp18:institution-id:pcmdi
-ukcp:ukcp18:institution-id:thu
+ukcp:ukcp18:institution-id:ceda
+ukcp:ukcp18:institution-id:mohc
+ukcp:ukcp18:institution-id:stfc
 ```
+
+## 5. Future usage (after the initial install)
+
+Once you have run the above code, you only need to do the following to set up your environment each time you want to work with the vocabularies:
+
+```
+cd vocabs/
+source venv/bin/activate
+```
+
+(And of course you could put that into a start-up file such as `.profile` or `.bashrc`).
+
+## PYESSV usage examples
 
 See examples at:
 
@@ -107,6 +107,8 @@ mkdir vocabs
 cd vocabs/
 ${VIRTUALENV_DIR}/virtualenv venv
 source venv/bin/activate
+pip install --upgrade setuptools
+pip install --upgrade pip
 
 git clone https://github.com/ukcp-data/UKCP18_CVs
 pip install pyessv
@@ -120,7 +122,10 @@ python sh/write_ukcp18_cvs.py --source=../UKCP18_CVs
 Test it with:
 
 ```
-$ python
+cd vocabs/
+source venv/bin/activate
+python
+
 >>> import pyessv
 >>> insts = pyessv.load('ukcp', 'ukcp18', 'institution-id')
 >>> for i in insts: print i
