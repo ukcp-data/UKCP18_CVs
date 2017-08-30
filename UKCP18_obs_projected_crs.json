@@ -9,7 +9,7 @@
             "latitude_of_origin": 49,
             "name": "OSGB 1936 / British National Grid",
             "projection": "Transverse_Mercator",
-            "scale_factor": "",
+            "scale_factor": 0.9996012717,
             "unit": "metre"
         }
     },

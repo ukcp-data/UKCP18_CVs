@@ -2,11 +2,11 @@
     "geographic_crs": {
         "4277": {
             "epsg": 4277,
-            "inverse_flattening": "",
+            "inverse_flattening": 299.3249646,
             "name": "OSGB 1936",
             "prime_meridian": 0,
-            "semi_major_axis": "",
-            "semi_minor_axis": ""
+            "semi_major_axis": 6377563.396,
+            "semi_minor_axis": 6356256.909
         }
     },
     "version_metadata": {

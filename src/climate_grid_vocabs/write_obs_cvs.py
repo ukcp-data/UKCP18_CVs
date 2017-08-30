@@ -50,7 +50,7 @@ def write_json(sheet, name, key_name):
         d = {}
     
         for key, value in data.items():
-            if type(value) == type(numpy.nan): value = ""
+            if pandas.isnull(value): value = ""
             d[key] = value
 
         sn = d[key_name]

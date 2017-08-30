@@ -957,7 +957,7 @@
             "standard_name": "cloud_area_fraction",
             "temporal_resolution": "monthly",
             "time_point_offset": "days=15",
-            "units": "",
+            "units": 0.01,
             "variable_name": "cloudcover"
         },
         "monthly_grassmin": {
@@ -1332,7 +1332,7 @@
             "standard_name": "relative_humidity",
             "temporal_resolution": "monthly",
             "time_point_offset": "days=15",
-            "units": "",
+            "units": 0.01,
             "variable_name": "relativehumidity"
         },
         "monthly_snowfalling": {
