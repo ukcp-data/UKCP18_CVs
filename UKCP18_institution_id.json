@@ -1,7 +1,7 @@
 {
     "institution_id":{
         "CEDA":"Centre for Environmental Data Analysis, Rutherford Appleton Laboratory, Harwell Campus, Didcot OX11 0QX",
-        "MOHC":"Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK",
+        "MOHC":"Met Office Hadley Centre, FitzRoy Road, Exeter, Devon, EX1 3PB, UK",
         "STFC":"Science and Technology Facilities Council, Rutherford Appleton Laboratory, Harwell Campus, Didcot OX11 0QX"
     },
     "version_metadata":{
