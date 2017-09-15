@@ -1,9 +1,17 @@
 {
-    "prob_type":[
-        "sample"
-    ],
+    "sample":{
+        "location_type":["grid_square","river_basin","administrative_region"],
+        "emission_scenario":["Historical","SRES_A1B", "RCP2.6", "RCP4.5", "RCP6.0", "RCP8.5"],
+        "time_period":["1961-1990","1981-2010","1980-2000","2020-2040","2060-2080","1900-2100","1961-2100","1980-2080", "2007-2100","1891-2016"],
+        "administrative_region":["Channel Islands","East Midlands","East of England","Eastern Scotland","Isle of Man","London","North East England","North West England","Northern Ireland","Northern Scotland","South East England","South West England","Wales","West Midlands","Western Scotland","Yorkshire & Humberside"],
+        "river_basin":["Anglian","Argyll","Clyde","Dee","Forth","Humber","Neagh Bann","North East Scotland","North Eastern Ireland","North Highland","North West England","North Western Ireland","Northumbria","Orkney and Shetland","Severn","Solway","South East England","South West England","Tay","Thames","Tweed","West_Highland","Western_Wales"]
+    },
+    "percentile":{
+        "label":"percentile",
+        "description":"The value below which a specified percentage falls."
+    },
     "version_metadata":{
-        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "author": ["Antony Wilson <antony.wilson@stfc.ac.uk>", "Charlotte Pascoe <charlotte.pascoe@ncas.ac.uk>"],
         "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
         "institution_id":"STFC",
         "previous_commit":""
