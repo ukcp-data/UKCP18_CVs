@@ -1,7 +1,7 @@
 {
     "sample":{
         "label":"sample",
-        "description":"The sampled data provides 10,000 samples, each of which represents a projected change in climate for one location, emission scenario and time period."
+        "description":"The sampled data provides ***,000 samples, each of which represents a projected change in climate for one location, emission scenario and time period."
     },
     "percentile":{
         "label":"percentile",
