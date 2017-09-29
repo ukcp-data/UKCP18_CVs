@@ -1,15 +1,15 @@
 {
-	"scenario":{
-        "sres-a1b": "SRES A1B",
-        "rcp26": "RCP 2.6",
-        "rcp45": "RCP 4.5",
-        "rcp60": "RCP 6.0",
-        "rcp85": "RCP 8.5"
-	},
-    "version_metadata":{
-        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
-        "creation_date":"Wed May 17 07:45:06 2017 -0700",
-        "institution_id":"STFC",
-        "previous_commit":""
-    }
+   "scenario":{
+      "sres-a1b":"SRES A1B",
+      "rcp26":"RCP 2.6",
+      "rcp45":"RCP 4.5",
+      "rcp60":"RCP 6.0",
+      "rcp85":"RCP 8.5"
+   },
+   "version_metadata":{
+      "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
+      "creation_date":"Wed May 17 07:45:06 2017 -0700",
+      "institution_id":"STFC",
+      "previous_commit":""
+   }
 }
