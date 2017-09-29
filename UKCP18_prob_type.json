@@ -1,16 +1,21 @@
 {
-    "sample":{
-        "label":"sample",
-        "description":"The sampled data provides ***,000 samples, each of which represents a projected change in climate for one location, emission scenario and time period."
-    },
-    "percentile":{
-        "label":"percentile",
-        "description":"The value below which a specified percentage falls."
-    },
-    "version_metadata":{
-        "author": ["Antony Wilson <antony.wilson@stfc.ac.uk>", "Charlotte Pascoe <charlotte.pascoe@ncas.ac.uk>"],
-        "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
-        "institution_id":"STFC",
-        "previous_commit":""
-    }
+   "prob_type":{
+      "percentile":{
+         "label":"percentile",
+         "description":"The value below which a specified percentage falls."
+      },
+      "sample":{
+         "label":"sample",
+         "description":"The sampled data provides ***,000 samples, each of which represents a projected change in climate for one location, emission scenario and time period."
+      }
+   },
+   "version_metadata":{
+      "author":[
+         "Antony Wilson <antony.wilson@stfc.ac.uk>",
+         "Charlotte Pascoe <charlotte.pascoe@ncas.ac.uk>"
+      ],
+      "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
+      "institution_id":"STFC",
+      "previous_commit":""
+   }
 }
