@@ -1,16 +1,21 @@
 {
-    "ukcp18":{
-        "label":"UKCP18",
-        "description":"The UK Climate Projections Project (2018)"
-    },
-    "ukcp09":{
-        "label":"UKCP09",
-        "description":"The UK Climate Projections Project (2009)"
-    },
-    "version_metadata":{
-        "author":["Antony Wilson <antony.wilson@stfc.ac.uk>", "Charlotte Pascoe <charlotte.pascoe@ncas.ac.uk>"],
-        "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
-        "institution_id":"STFC",
-        "previous_commit":""
-    }
+   "project":{
+      "ukcp18":{
+         "label":"UKCP18",
+         "description":"The UK Climate Projections Project (2018)"
+      },
+      "ukcp09":{
+         "label":"UKCP09",
+         "description":"The UK Climate Projections Project (2009)"
+      }
+   },
+   "version_metadata":{
+      "author":[
+         "Antony Wilson <antony.wilson@stfc.ac.uk>",
+         "Charlotte Pascoe <charlotte.pascoe@ncas.ac.uk>"
+      ],
+      "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
+      "institution_id":"STFC",
+      "previous_commit":""
+   }
 }
