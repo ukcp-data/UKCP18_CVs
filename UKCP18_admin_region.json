@@ -1,25 +1,26 @@
 {
     "admin_region":{
-		"UKC": "North East (England)",
-		"UKD": "North West (England)",
-		"UKE": "Yorkshire and Humber",
-		"UKF": "East Midlands (England)",
-		"UKG": "West Midlands (England)",
-		"UKH": "East of England",
-		"UKI": "London",
-		"UKJ": "South East (England)",
-		"UKK": "South West (England)",
-		"UKL": "Wales",
-		"UKM2": "Eastern Scotland",
-		"UKM3": "South Western Scotland",
-		"UKM5": "North Eastern Scotland",
-		"UKN": "Northern Ireland",
-		"CI": "Channel Islands",
-		"IOM": "Isle of Man"
+		"n_e_e": "North East England",
+		"n_w_e": "North West England",
+		"y_a_h": "Yorkshire and Humber",
+		"e_m": "East Midlands",
+		"w_m": "West Midlands",
+		"e_o_e": "East of England",
+		"l": "London",
+		"s_e_e": "South East England",
+		"s_w_e": "South West England",
+		"w": "Wales",
+		"e_s": "East Scotland",
+		"w_s": "West Scotland",
+		"n_s": "North Scotland",
+		"n_i": "Northern Ireland",
+		"c_i": "Channel Islands",
+		"i_o_m": "Isle of Man"
 	},
     "version_metadata":{
         "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
         "creation_date":"Wed Oct 11 12:00:00 2017 -0100",
+        "update_date":"Wed Oct 11 13:00:00 2017 -0100",
         "institution_id":"STFC",
         "previous_commit":""
     }
