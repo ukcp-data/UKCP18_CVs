@@ -1,0 +1,36 @@
+{
+    "catchment":{
+		"tay": "Tay",
+		"orkney_and_shetlands": "Orkney and Shetlands",
+		"clyde": "Clyde",
+		"south_east_england": "South East England",
+		"north_eastern_ireland": "North Eastern Ireland",
+		"northumbria": "Northumbria",
+		"tweed": "Tweed",
+		"forth": "Forth",
+		"humber": "Humber",
+		"channel_islands": "Channel Islands",
+		"republic_of_ireland": "Republic of Ireland",
+		"solway": "Solway",
+		"north_highland": "North Highland",
+		"north_west_england": "North West England",
+		"argyll": "Argyll",
+		"thames": "Thames",
+		"north_western_ireland": "North Western Ireland",
+		"severn": "Severn",
+		"dee": "Dee",
+		"west_highland": "West Highland",
+		"isle_of_man": "Isle of Man",
+		"south_west_england": "South West England",
+		"neagh_bann": "Neagh Bann",
+		"west_wales": "West Wales",
+		"north_east_scotland": "North East Scotland",
+		"anglian": "Anglian"
+	},
+    "version_metadata":{
+        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date":"Wed Oct 11 13:40:00 2017 -0100",
+        "institution_id":"STFC",
+        "previous_commit":""
+    }
+}
