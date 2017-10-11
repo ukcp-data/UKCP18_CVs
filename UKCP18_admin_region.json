@@ -1,0 +1,26 @@
+{
+    "admin_region":{
+		"UKC": "North East (England)",
+		"UKD": "North West (England)",
+		"UKE": "Yorkshire and Humber",
+		"UKF": "East Midlands (England)",
+		"UKG": "West Midlands (England)",
+		"UKH": "East of England",
+		"UKI": "London",
+		"UKJ": "South East (England)",
+		"UKK": "South West (England)",
+		"UKL": "Wales",
+		"UKM2": "Eastern Scotland",
+		"UKM3": "South Western Scotland",
+		"UKM5": "North Eastern Scotland",
+		"UKN": "Northern Ireland",
+		"CI": "Channel Islands",
+		"IOM": "Isle of Man"
+	},
+    "version_metadata":{
+        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date":"Wed Oct 11 12:00:00 2017 -0100",
+        "institution_id":"STFC",
+        "previous_commit":""
+    }
+}
