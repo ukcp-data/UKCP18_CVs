@@ -1,5 +1,5 @@
 {
-    "catchment":{
+    "river_basin":{
 		"tay": "Tay",
 		"orkney_and_shetlands": "Orkney and Shetlands",
 		"clyde": "Clyde",
@@ -29,7 +29,7 @@
 	},
     "version_metadata":{
         "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
-        "creation_date":"Wed Oct 11 13:40:00 2017 -0100",
+        "creation_date":"Thur Oct 12 13:00:00 2017 -0100",
         "institution_id":"STFC",
         "previous_commit":""
     }
