@@ -1,1232 +1,743 @@
 {
     "variable": {
-        "fog": {
-            "name": "Fog",
-            "standard_name": "None",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                }
-            ],
-            "um_stash": "03248",
-            "units": ""
-        },
-        "hail_graupel": {
-            "name": "hail (Graupel)",
-            "standard_name": "None",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                }
-            ],
-            "um_stash": "21102",
-            "units": ""
-        },
-        "hottest_day_max_temp": {
-            "name": "Hottest day max temp",
-            "standard_name": "None",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "annual"
-                }
-            ],
-            "um_stash": "03236",
-            "units": "degC"
-        },
-        "lightning": {
-            "name": "Lightning",
-            "standard_name": "lightning_flash_rate",
-            "subset": [
-                {
-                    "cmip6_name": "flashrate",
-                    "cmip6_standard_name": "lightning_flash_rate",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "accumulated",
-                    "time_step": "day"
-                }
-            ],
-            "um_stash": "21104",
-            "units": "1"
-        },
-        "max_5-day_accumulative_rainfall": {
+        "None": {
             "name": "Max. 5-day accumulative rainfall",
-            "standard_name": "None",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "total",
-                    "time_step": "annual"
-                }
+            "notes": [
+                "Availability TBC"
+            ],
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA",
+                "total"
+            ],
+            "time_step": [
+                "annual",
+                "mon"
             ],
             "um_stash": "05216",
             "units": "mm"
         },
-        "net_surface_long_wave_flux": {
-            "name": "Net Surface long wave flux",
-            "standard_name": "surface_net_downward_longwave_flux",
-            "subset": [
-                {
-                    "cmip6_name": "rls",
-                    "cmip6_standard_name": "surface_net_downward_longwave_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                }
+        "SfcWind": {
+            "cmip6_cmor_tables_row_id": [
+                "1474",
+                "1476",
+                "1477",
+                "1479"
             ],
-            "um_stash": "02201",
-            "units": ""
-        },
-        "net_surface_long_wave_radiation": {
-            "name": "Net surface long wave radiation",
-            "standard_name": "surface_net_downward_longwave_flux",
-            "subset": [
-                {
-                    "cmip6_name": "rls",
-                    "cmip6_standard_name": "surface_net_downward_longwave_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "3hr"
-                }
+            "cmip6_name": "SfcWind",
+            "cmip6_standard_name": "wind_speed",
+            "name": "Wind speed at 10m",
+            "notes": [
+                "Look also at post-processing this from daily mean U and V, as output from model may be inconsistent",
+                "Use WPS for LS1-3"
             ],
-            "um_stash": "02207",
-            "units": "W m-2"
-        },
-        "net_surface_long_wave_radiation_": {
-            "name": "Net surface long wave radiation ",
-            "standard_name": "surface_net_downward_longwave_flux",
-            "subset": [
-                {
-                    "cmip6_name": "rls",
-                    "cmip6_standard_name": "surface_net_downward_longwave_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                }
+            "standard_name": "wind_speed",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
             ],
-            "um_stash": "02207",
-            "units": "W m-2"
-        },
-        "net_surface_short_wave_flux": {
-            "name": "Net Surface short wave flux",
-            "standard_name": "surface_net_downward_shortwave_flux",
-            "subset": [
-                {
-                    "cmip6_name": "rss",
-                    "cmip6_standard_name": "surface_net_downward_shortwave_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                }
+            "time_averaging": [
+                "LTA",
+                "instantaneous",
+                "mean"
             ],
-            "um_stash": "01201",
-            "units": ""
-        },
-        "net_surface_short_wave_radiation": {
-            "name": "Net surface short wave radiation",
-            "standard_name": "surface_net_downward_shortwave_flux",
-            "subset": [
-                {
-                    "cmip6_name": "rss",
-                    "cmip6_standard_name": "surface_net_downward_shortwave_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "rss",
-                    "cmip6_standard_name": "surface_net_downward_shortwave_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "3hr"
-                }
+            "time_step": [
+                "3hr",
+                "6hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "01201",
-            "units": "W m-2"
+            "units": "m s-1"
         },
-        "precipitation": {
-            "name": "Precipitation",
-            "standard_name": "lwe_thickness_of_precipitation_amount\u00a0",
-            "subset": [
-                {
-                    "cmip6_name": "pr",
-                    "cmip6_standard_name": "precipitation_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "1hr"
-                },
-                {
-                    "cmip6_name": "pr",
-                    "cmip6_standard_name": "precipitation_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "pr",
-                    "cmip6_standard_name": "precipitation_flux",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "pr",
-                    "cmip6_standard_name": "precipitation_flux",
-                    "notes": "Use WPS for LS1-3",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
+        "clt": {
+            "cmip6_cmor_tables_row_id": [
+                "206",
+                "209"
             ],
-            "um_stash": "05216",
-            "units": "mm"
-        },
-        "relative_humidity": {
-            "name": "Relative humidity",
-            "standard_name": "relative_humidity",
-            "subset": [
-                {
-                    "cmip6_name": "hurs",
-                    "cmip6_standard_name": "relative_humidity",
-                    "notes": "Post-process from instantaneous temp and spec humidity",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "3hr"
-                },
-                {
-                    "cmip6_name": "hurs",
-                    "cmip6_standard_name": "relative_humidity",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "hurs",
-                    "cmip6_standard_name": "relative_humidity",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "hurs",
-                    "cmip6_standard_name": "relative_humidity",
-                    "notes": "Use WPS for LS1-3",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "Not in stash",
-            "units": "%"
-        },
-        "sea_level_pressure": {
-            "name": "Sea level pressure",
-            "standard_name": "air_pressure_at_sea_level",
-            "subset": [
-                {
-                    "cmip6_name": "psl",
-                    "cmip6_standard_name": "air_pressure_at_sea_level",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "intantaneous",
-                    "time_step": "6hr"
-                },
-                {
-                    "cmip6_name": "psl",
-                    "cmip6_standard_name": "air_pressure_at_sea_level",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "psl",
-                    "cmip6_standard_name": "air_pressure_at_sea_level",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "16222",
-            "units": "hPa"
-        },
-        "sea_surface_elevation": {
-            "name": "Sea surface elevation",
-            "standard_name": "",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "For week-long case studies",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "1hr"
-                }
-            ],
-            "um_stash": "",
-            "units": "m"
-        },
-        "sea_water_level": {
-            "name": "Sea water level",
-            "standard_name": "",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "annual"
-                }
-            ],
-            "um_stash": "",
-            "units": "m"
-        },
-        "snow_depth": {
-            "name": "Snow depth",
-            "standard_name": "surface_snow_thickness",
-            "subset": [
-                {
-                    "cmip6_name": "snd",
-                    "cmip6_standard_name": "surface_snow_thickness",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "snd",
-                    "cmip6_standard_name": "surface_snow_thickness",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "00376",
-            "units": "mm"
-        },
-        "snow_lying": {
-            "name": "Snow lying",
-            "standard_name": "surface_snow_binary_mask",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "Availability TBC",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "Availability TBC",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "",
-            "units": ""
-        },
-        "specfic_humidity": {
-            "name": "Specfic humidity",
-            "standard_name": "specific_humidity",
-            "subset": [
-                {
-                    "cmip6_name": "huss",
-                    "cmip6_standard_name": "specific_humidity",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "huss",
-                    "cmip6_standard_name": "specific_humidity",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "03237",
-            "units": "1"
-        },
-        "specific_humidity": {
-            "name": "Specific humidity",
-            "standard_name": "specific_humidity",
-            "subset": [
-                {
-                    "cmip6_name": "huss",
-                    "cmip6_standard_name": "specific_humidity",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "3hr"
-                }
-            ],
-            "um_stash": "03237",
-            "units": "1"
-        },
-        "sunshine": {
-            "name": "Sunshine",
-            "standard_name": "",
-            "subset": [
-                {
-                    "notes": "Post-process from total cloud cover for LS2-3",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "total",
-                    "time_step": "day"
-                }
-            ],
-            "um_stash": "",
-            "units": "h"
-        },
-        "surface_evaporation": {
-            "name": "Surface evaporation",
-            "standard_name": "surface_upward_water_flux",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "evspsbl",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                }
-            ],
-            "um_stash": "03223",
-            "units": "mm"
-        },
-        "surface_temperature": {
-            "name": "Surface temperature",
-            "standard_name": "air_temperature",
-            "subset": [
-                {
-                    "cmip6_name": "tas",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "3hr"
-                },
-                {
-                    "cmip6_name": "tas",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "tas",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "tasmax",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "max",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "tasmin",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "min",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "tasmax",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "max",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "tasmin",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "min",
-                    "time_step": "day"
-                }
-            ],
-            "um_stash": "03236",
-            "units": "degC"
-        },
-        "surface_temperature_max": {
-            "name": "Surface temperature (max)",
-            "standard_name": "air_temperature",
-            "subset": [
-                {
-                    "cmip6_name": "tasmax",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "Use WPS for LS1-3",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "03236",
-            "units": "degC"
-        },
-        "surface_temperature_mean": {
-            "name": "Surface temperature (mean)",
-            "standard_name": "air_temperature",
-            "subset": [
-                {
-                    "cmip6_name": "tas",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "Use WPS for LS1-3",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "03236",
-            "units": "degC"
-        },
-        "surface_temperature_min": {
-            "name": "Surface temperature (min)",
-            "standard_name": "air_temperature",
-            "subset": [
-                {
-                    "cmip6_name": "tasmin",
-                    "cmip6_standard_name": "air_temperature",
-                    "notes": "Use WPS for LS1-3",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "03236",
-            "units": "degC"
-        },
-        "target_protection_level": {
-            "name": "Target protection level",
-            "standard_name": "",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "use-by date"
-                }
-            ],
-            "um_stash": "",
-            "units": "m"
-        },
-        "total_cloud": {
+            "cmip6_name": "clt",
+            "cmip6_standard_name": "cloud_area_fraction",
             "name": "Total cloud",
+            "notes": [
+                "NCIC have sunshine hours"
+            ],
             "standard_name": "cloud_area_fraction",
-            "subset": [
-                {
-                    "cmip6_name": "clt",
-                    "cmip6_standard_name": "cloud_area_fraction",
-                    "notes": "NCIC have sunshine hours",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "clt",
-                    "cmip6_standard_name": "cloud_area_fraction",
-                    "notes": "NCIC have sunshine hours",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                }
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "day",
+                "mon"
             ],
             "um_stash": "02204",
             "units": "%"
         },
-        "total_downward_shortwave_flux": {
+        "flashrate": {
+            "cmip6_cmor_tables_row_id": [
+                "535"
+            ],
+            "cmip6_name": "flashrate",
+            "cmip6_standard_name": "lightning_flash_rate",
+            "name": "Lightning",
+            "standard_name": "lightning_flash_rate",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "accumulated"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "21104",
+            "units": "1"
+        },
+        "fog": {
+            "name": "Fog",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "03248"
+        },
+        "hail": {
+            "name": "hail (Graupel)",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "21102"
+        },
+        "hurs": {
+            "cmip6_cmor_tables_row_id": [
+                "678",
+                "679",
+                "681"
+            ],
+            "cmip6_name": "hurs",
+            "cmip6_standard_name": "relative_humidity",
+            "name": "Relative humidity",
+            "notes": [
+                "Post-process from instantaneous temp and spec humidity",
+                "Use WPS for LS1-3"
+            ],
+            "standard_name": "relative_humidity",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA",
+                "instantaneous",
+                "mean"
+            ],
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "Not in stash",
+            "units": "%"
+        },
+        "huss": {
+            "cmip6_cmor_tables_row_id": [
+                "704",
+                "705",
+                "707"
+            ],
+            "cmip6_name": "huss",
+            "cmip6_standard_name": "specific_humidity",
+            "name": "Specfic humidity",
+            "standard_name": "specific_humidity",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "instantaneous",
+                "mean"
+            ],
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "03237",
+            "units": "1"
+        },
+        "maxTempHottestDay": {
+            "name": "Hottest day max temp",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "annual"
+            ],
+            "um_stash": "03236",
+            "units": "degC"
+        },
+        "postprocessed": {
+            "cmip6_name": "postprocessed",
+            "name": "Wind direction at 10m",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_step": [
+                "day"
+            ]
+        },
+        "pr": {
+            "cmip6_cmor_tables_row_id": [
+                "1164",
+                "1166",
+                "1169"
+            ],
+            "cmip6_name": "pr",
+            "cmip6_standard_name": "precipitation_flux",
+            "name": "Precipitation",
+            "notes": [
+                "Use WPS for LS1-3"
+            ],
+            "standard_name": "lwe_thickness_of_precipitation_amount\u00a0",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA",
+                "mean"
+            ],
+            "time_step": [
+                "1hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "05216",
+            "units": "mm"
+        },
+        "psl": {
+            "cmip6_cmor_tables_row_id": [
+                "1235",
+                "1237",
+                "1240"
+            ],
+            "cmip6_name": "psl",
+            "cmip6_standard_name": "air_pressure_at_sea_level",
+            "name": "Sea level pressure",
+            "notes": [
+                "Use WPS for LS1-3"
+            ],
+            "standard_name": "air_pressure_at_sea_level",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA",
+                "intantaneous",
+                "mean"
+            ],
+            "time_step": [
+                "6hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "16222",
+            "units": "hPa"
+        },
+        "pv": {
+            "name": "Vapour pressure",
+            "notes": [
+                "Obs availability TBC"
+            ],
+            "standard_name": "water_vapor_partial_pressure_in_air",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA"
+            ],
+            "time_step": [
+                "mon"
+            ],
+            "units": "hPa"
+        },
+        "rls": {
+            "cmip6_cmor_tables_row_id": [
+                "1317",
+                "1318",
+                "?"
+            ],
+            "cmip6_name": "rls",
+            "cmip6_standard_name": "surface_net_downward_longwave_flux",
+            "name": "Net Surface long wave flux",
+            "standard_name": "surface_net_downward_longwave_flux",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "02201"
+        },
+        "rsds": {
+            "cmip6_cmor_tables_row_id": [
+                "1371"
+            ],
+            "cmip6_name": "rsds",
+            "cmip6_standard_name": "surface_downwelling_shortwave_flux_in_air",
             "name": "Total downward shortwave flux",
+            "notes": [
+                "Glen's, rsds, standard name: surface downwelling short wave flux in air, long name: surface downwelling short wave radiation, STASH:01235 LBPROC 128"
+            ],
             "standard_name": "surface_downwelling_shortwave_flux_in_air",
-            "subset": [
-                {
-                    "cmip6_name": "rsds",
-                    "cmip6_standard_name": "surface_downwelling_shortwave_flux_in_air",
-                    "notes": "Glen's, rsds, standard name: surface downwelling short wave flux in air, long name: surface downwelling short wave radiation, STASH:01235 LBPROC 128",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                }
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "mon"
             ],
             "um_stash": "01235",
             "units": "Wm-2"
         },
-        "vapour_pressure": {
-            "name": "Vapour pressure",
-            "standard_name": "water_vapor_partial_pressure_in_air",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "Obs availability TBC",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "Obs availability TBC",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
+        "rss": {
+            "cmip6_cmor_tables_row_id": [
+                "1399",
+                "1400",
+                "?"
             ],
-            "um_stash": "",
-            "units": "hPa"
+            "cmip6_name": "rss",
+            "cmip6_standard_name": "surface_net_downward_shortwave_flux",
+            "name": "Net Surface short wave flux",
+            "standard_name": "surface_net_downward_shortwave_flux",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "01201"
         },
-        "wet_bulb_temperature": {
+        "se": {
+            "name": "Surface evaporation",
+            "notes": [
+                "evspsbl"
+            ],
+            "standard_name": "surface_upward_water_flux",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "03223",
+            "units": "mm"
+        },
+        "snd": {
+            "cmip6_cmor_tables_row_id": [
+                "1616",
+                "1617"
+            ],
+            "cmip6_name": "snd",
+            "cmip6_standard_name": "surface_snow_thickness",
+            "name": "Snow depth",
+            "standard_name": "surface_snow_thickness",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_step": [
+                "day",
+                "mon"
+            ],
+            "um_stash": "00376",
+            "units": "mm"
+        },
+        "sse": {
+            "name": "Sea surface elevation",
+            "notes": [
+                "For week-long case studies"
+            ],
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_step": [
+                "1hr"
+            ],
+            "units": "m"
+        },
+        "sun": {
+            "name": "Sunshine",
+            "notes": [
+                "Post-process from total cloud cover for LS2-3"
+            ],
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "total"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "units": "h"
+        },
+        "swl": {
+            "name": "Sea water level",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "annual"
+            ],
+            "units": "m"
+        },
+        "tas": {
+            "cmip6_cmor_tables_row_id": [
+                "1706",
+                "1710",
+                "1712"
+            ],
+            "cmip6_name": "tas",
+            "cmip6_standard_name": "air_temperature",
+            "name": "Surface temperature",
+            "notes": [
+                "Use WPS for LS1-3"
+            ],
+            "standard_name": "air_temperature",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA",
+                "instantaneous",
+                "mean"
+            ],
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "03236",
+            "units": "degC"
+        },
+        "tasmax": {
+            "cmip6_cmor_tables_row_id": [
+                "1718",
+                "1719"
+            ],
+            "cmip6_name": "tasmax",
+            "cmip6_standard_name": "air_temperature",
+            "name": "Surface temperature",
+            "notes": [
+                "Use WPS for LS1-3"
+            ],
+            "standard_name": "air_temperature",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA",
+                "max"
+            ],
+            "time_step": [
+                "day",
+                "mon"
+            ],
+            "um_stash": "03236",
+            "units": "degC"
+        },
+        "tasmin": {
+            "cmip6_cmor_tables_row_id": [
+                "1722",
+                "1723"
+            ],
+            "cmip6_name": "tasmin",
+            "cmip6_standard_name": "air_temperature",
+            "name": "Surface temperature",
+            "notes": [
+                "Use WPS for LS1-3"
+            ],
+            "standard_name": "air_temperature",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "LTA",
+                "min"
+            ],
+            "time_step": [
+                "day",
+                "mon"
+            ],
+            "um_stash": "03236",
+            "units": "degC"
+        },
+        "tpl": {
+            "name": "Target protection level",
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_step": [
+                "use-by date"
+            ],
+            "units": "m"
+        },
+        "twb": {
             "name": "Wet bulb temperature",
-            "standard_name": "",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "6hr"
-                },
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                }
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "instantaneous",
+                "mean"
+            ],
+            "time_step": [
+                "6hr",
+                "day"
             ],
             "um_stash": "PP",
             "units": "degC"
         },
-        "wettest_day": {
-            "name": "Wettest day",
-            "standard_name": "",
-            "subset": [
-                {
-                    "cmip6_name": "None",
-                    "cmip6_standard_name": "None",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "total",
-                    "time_step": "annual"
-                }
+        "uas": {
+            "cmip6_cmor_tables_row_id": [
+                "1909",
+                "1914"
             ],
-            "um_stash": "16222",
-            "units": "1"
-        },
-        "wind_at_10m_u": {
+            "cmip6_name": "uas",
+            "cmip6_standard_name": "eastward_wind",
             "name": "Wind at 10m U",
             "standard_name": "eastward_wind",
-            "subset": [
-                {
-                    "cmip6_name": "uas",
-                    "cmip6_standard_name": "eastward_wind",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "3hr"
-                },
-                {
-                    "cmip6_name": "uas",
-                    "cmip6_standard_name": "eastward_wind",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                }
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "instantaneous",
+                "mean"
+            ],
+            "time_step": [
+                "3hr",
+                "day"
             ],
             "um_stash": "30201",
             "units": "m s-1"
         },
-        "wind_at_10m_v": {
+        "vas": {
+            "cmip6_cmor_tables_row_id": [
+                "1957",
+                "1962"
+            ],
+            "cmip6_name": "vas",
+            "cmip6_standard_name": "northward_wind",
             "name": "Wind at 10m V",
             "standard_name": "northward_wind",
-            "subset": [
-                {
-                    "cmip6_name": "vas",
-                    "cmip6_standard_name": "northward_wind",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "3hr"
-                },
-                {
-                    "cmip6_name": "vas",
-                    "cmip6_standard_name": "northward_wind",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                }
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "instantaneous",
+                "mean"
+            ],
+            "time_step": [
+                "3hr",
+                "day"
             ],
             "um_stash": "30202",
             "units": "m s-1"
         },
-        "wind_direction_at_10m": {
-            "name": "Wind direction at 10m",
-            "standard_name": "",
-            "subset": [
-                {
-                    "cmip6_name": "postprocessed",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "",
-                    "time_step": "day"
-                }
+        "wsgmax10m": {
+            "cmip6_cmor_tables_row_id": [
+                "2037"
             ],
-            "um_stash": "",
-            "units": ""
-        },
-        "wind_gust_at_10m": {
+            "cmip6_name": "wsgmax10m",
+            "cmip6_standard_name": "wind_speed_of_gust",
             "name": "Wind gust at 10m",
             "standard_name": "wind_speed_of_gust",
-            "subset": [
-                {
-                    "cmip6_name": "wsgmax10m",
-                    "cmip6_standard_name": "wind_speed_of_gust",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "max",
-                    "time_step": "3hr"
-                }
+            "strand": [
+                "land strand 1",
+                "land strand 2",
+                "land strand 3 12km",
+                "land strand 3 2km",
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "max"
+            ],
+            "time_step": [
+                "3hr"
             ],
             "um_stash": "03463",
-            "units": "m s-1"
-        },
-        "wind_speed_at_10m": {
-            "name": "Wind speed at 10m",
-            "standard_name": "wind_speed",
-            "subset": [
-                {
-                    "cmip6_name": "SfcWind",
-                    "cmip6_standard_name": "wind_speed",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "6hr"
-                },
-                {
-                    "cmip6_name": "SfcWind",
-                    "cmip6_standard_name": "wind_speed",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "instantaneous",
-                    "time_step": "3hr"
-                },
-                {
-                    "cmip6_name": "SfcWind",
-                    "cmip6_standard_name": "wind_speed",
-                    "notes": "Look also at post-processing this from daily mean U and V, as output from model may be inconsistent",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "day"
-                },
-                {
-                    "cmip6_name": "SfcWind",
-                    "cmip6_standard_name": "wind_speed",
-                    "notes": "",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "mean",
-                    "time_step": "mon"
-                },
-                {
-                    "cmip6_name": "SfcWind",
-                    "cmip6_standard_name": "wind_speed",
-                    "notes": "Use WPS for LS1-3",
-                    "strand": [
-                        "observations",
-                        "marine",
-                        "land strand 1",
-                        "land strand 2",
-                        "land strand 3 12km",
-                        "land strand 3 2km"
-                    ],
-                    "time_averaging": "LTA",
-                    "time_step": "mon"
-                }
-            ],
-            "um_stash": "",
             "units": "m s-1"
         }
     }

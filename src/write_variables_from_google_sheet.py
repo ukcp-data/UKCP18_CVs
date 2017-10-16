@@ -66,33 +66,20 @@ def get_spreadsheet():
 
 def make_dict_from_sheet(spreadsheet):
     """
-    Group rows by variable name.
+    Group rows by variable id.
 
     @return a dict where
-                key = variable name
+                key = variable id
                 value = list of matching rows
     """
+    id_column = 0
     data = {}
     for row in spreadsheet:
-        if row[1] in data.keys():
-            data[row[1]].append(row)
+        if row[id_column] in data.keys():
+            data[row[id_column]].append(row)
         else:
-            data[row[1]] = [row]
+            data[row[id_column]] = [row]
     return data
-
-
-def get_id(name):
-    """
-    Make an id from the name.
-
-    @return a string containing the id
-    """
-    id_ = name.replace(' ', '_')
-    id_ = id_.replace('.', '')
-    id_ = id_.replace('(', '')
-    id_ = id_.replace(')', '')
-    id_ = id_.lower()
-    return id_
 
 
 def process_data(data):
@@ -102,42 +89,68 @@ def process_data(data):
     @return a dict
     """
     variable = {}
+    strand = set()
+    time_step = set()
+    time_averaging = set()
+    notes = set()
+    cmip6_cmor_tables_row_id = set()
 
     for row in data:
         if variable == {}:
             # these fields are common to all the rows for a variable
             variable['name'] = row[1]
-            variable['um_stash'] = row[11]
-            variable['standard_name'] = row[12]
-            variable['units'] = row[13]
-            variable['subset'] = []
+            if row[11] != "":
+                variable['um_stash'] = row[11]
+            if row[12] != "" and row[12] != "None":
+                variable['standard_name'] = row[12]
+            if row[13] != "":
+                variable['units'] = row[13]
+            try:
+                if row[14] != "" and row[14] != "None":
+                    variable['cmip6_name'] = row[14]
+                if row[15] != ""and row[15] != "None":
+                    variable['cmip6_standard_name'] = row[15]
+            except IndexError:
+                pass
 
         # now sort out the differences between rows
-        subset = {}
+        if row[2] != "":
+            time_step.add(row[2])
+        if row[3] != "":
+            time_averaging.add(row[3])
+        if row[10] != "":
+            notes.add(row[10])
+
         try:
-            subset['time_step'] = row[2]
-            subset['time_averaging'] = row[3]
-            subset['notes'] = row[10]
-            subset['cmip6_name'] = row[14]
-            subset['cmip6_standard_name'] = row[15]
+            if row[16] != "" and row[16] != "None":
+                cmip6_cmor_tables_row_id.add(row[16])
         except IndexError:
             pass
 
-        subset['strand'] = []
         if row[4] is not None:
-            subset['strand'].append('observations')
+            strand.add('observations')
         if row[5] is not None:
-            subset['strand'].append('marine')
+            strand.add('marine')
         if row[6] is not None:
-            subset['strand'].append('land strand 1')
+            strand.add('land strand 1')
         if row[7] is not None:
-            subset['strand'].append('land strand 2')
+            strand.add('land strand 2')
         if row[8] is not None:
-            subset['strand'].append('land strand 3 12km')
+            strand.add('land strand 3 12km')
         if row[9] is not None:
-            subset['strand'].append('land strand 3 2km')
+            strand.add('land strand 3 2km')
 
-        variable['subset'].append(subset)
+    if len(time_step) > 0:
+        variable['time_step'] = sorted(list(time_step))
+    if len(time_averaging) > 0:
+        variable['time_averaging'] = sorted(list(time_averaging))
+    if len(strand) > 0:
+        variable['strand'] = sorted(list(strand))
+    if len(notes) > 0:
+        variable['notes'] = sorted(list(notes))
+    if len(cmip6_cmor_tables_row_id) > 0:
+        variable['cmip6_cmor_tables_row_id'] = sorted(
+            list(cmip6_cmor_tables_row_id))
 
     return variable
 
@@ -147,8 +160,7 @@ def main():
     variables = {}
     data = make_dict_from_sheet(spreadsheet)
     for key in data.keys():
-        id_ = get_id(key)
-        variables[id_] = process_data(data[key])
+        variables[key] = process_data(data[key])
 
     output = {'variable': variables}
 
