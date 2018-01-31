@@ -56,9 +56,8 @@ def get_spreadsheet():
                     'version=v4')
     service = discovery.build('sheets', 'v4', http=http,
                               discoveryServiceUrl=discoveryUrl)
-
     spreadsheetId = '1Ij3R3skvYhKnMSqXB6KHaxH0BSST5R0DI8zp2Qi82vw'
-    rangeName = 'Climate_variables!A2:R'
+    rangeName = 'Climate_variables!A2:V'
     result = service.spreadsheets().values().get(
         spreadsheetId=spreadsheetId, range=rangeName).execute()
     return result.get('values', [])
@@ -75,6 +74,8 @@ def make_dict_from_sheet(spreadsheet):
     id_column = 0
     data = {}
     for row in spreadsheet:
+        if len(row) < 2:
+            continue
         if row[id_column] in data.keys():
             data[row[id_column]].append(row)
         else:
@@ -95,50 +96,81 @@ def process_data(data):
     notes = set()
     cmip6_cmor_tables_row_id = set()
 
+    col_time_step = 2
+    col_long_name = 3
+    col_description = 4
+    col_plot_label = 5
+    col_standard_name = 6
+    col_units = 7
+    col_level = 8
+    col_cmip6_var_id = 9
+    col_time_averaging = 10
+    col_observations = 11
+    col_marine = 12
+    col_land_strand_1 = 13
+    col_land_strand_2 = 14
+    col_land_strand_3_12km = 15
+    col_land_strand_3_2km = 16
+    col_notes = 17
+    col_um_stash = 18
+    col_cmip6_standard_name = 19
+    col_cmip6_cmor_tables_row_id = 20
+
     for row in data:
         if variable == {}:
             # these fields are common to all the rows for a variable
-            variable['name'] = row[1]
-            if row[11] != "":
-                variable['um_stash'] = row[11]
-            if row[12] != "" and row[12] != "None":
-                variable['standard_name'] = row[12]
-            if row[13] != "":
-                variable['units'] = row[13]
+            variable['long_name'] = row[col_long_name]
+            variable['description'] = row[col_description]
+            variable['plot_label'] = row[col_plot_label]
+
+            if (row[col_standard_name] != "" and
+                    row[col_standard_name] != "None"):
+                variable['standard_name'] = row[col_standard_name]
+            if row[col_units] != "":
+                variable['units'] = row[col_units]
+            if row[col_level] != "":
+                variable['level'] = row[col_level]
+
             try:
-                if row[14] != "" and row[14] != "None":
-                    variable['cmip6_name'] = row[14]
-                if row[15] != ""and row[15] != "None":
-                    variable['cmip6_standard_name'] = row[15]
+                if (row[col_cmip6_var_id] != "" and
+                        row[col_cmip6_var_id] != "None"):
+                    variable['cmip6_name'] = row[col_cmip6_var_id]
+                if row[col_um_stash] != "":
+                    variable['um_stash'] = row[col_um_stash]
+                if (row[col_cmip6_standard_name] != "" and
+                        row[col_cmip6_standard_name] != "None"):
+                    variable['cmip6_standard_name'] = row[col_cmip6_standard_name]
             except IndexError:
                 pass
 
         # now sort out the differences between rows
-        if row[2] != "":
-            time_step.add(row[2])
-        if row[3] != "":
-            time_averaging.add(row[3])
-        if row[10] != "":
-            notes.add(row[10])
+        if row[col_time_step] != "":
+            time_step.add(row[col_time_step])
+        if row[col_time_averaging] != "":
+            time_averaging.add(row[col_time_averaging])
 
         try:
-            if row[16] != "" and row[16] != "None":
-                cmip6_cmor_tables_row_id.add(row[16])
+            if row[col_observations] is not None:
+                strand.add('observations')
+            if row[col_marine] is not None:
+                strand.add('marine')
+            if row[col_land_strand_1] is not None:
+                strand.add('land strand 1')
+            if row[col_land_strand_2] is not None:
+                strand.add('land strand 2')
+            if row[col_land_strand_3_12km] is not None:
+                strand.add('land strand 3 12km')
+            if row[col_land_strand_3_2km] is not None:
+                strand.add('land strand 3 2km')
+
+            if row[col_notes] != "":
+                notes.add(row[col_notes])
+
+            if (row[col_cmip6_cmor_tables_row_id] != "" and
+                    row[col_cmip6_cmor_tables_row_id] != "None"):
+                cmip6_cmor_tables_row_id.add(row[col_cmip6_cmor_tables_row_id])
         except IndexError:
             pass
-
-        if row[4] is not None:
-            strand.add('observations')
-        if row[5] is not None:
-            strand.add('marine')
-        if row[6] is not None:
-            strand.add('land strand 1')
-        if row[7] is not None:
-            strand.add('land strand 2')
-        if row[8] is not None:
-            strand.add('land strand 3 12km')
-        if row[9] is not None:
-            strand.add('land strand 3 2km')
 
     if len(time_step) > 0:
         variable['time_step'] = sorted(list(time_step))
