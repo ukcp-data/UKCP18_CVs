@@ -1,0 +1,24 @@
+{
+   "prob_data_type":{
+      "cdf":{
+         "label": "CDF",
+         "description": "Cumulative Distribution Function"
+      },
+      "pdf":{
+         "label": "PDF",
+         "description": "Probability Density Function"
+      },
+      "sample":{
+         "label": "Sample",
+         "description": "Sampled data."
+      }
+   },
+   "version_metadata":{
+      "author":[
+         "Ag Stephens <ag.stephens@stfc.ac.uk>"
+      ],
+      "creation_date":"Tue Feb 06 07:45:06 2018",
+      "institution_id":"STFC",
+      "previous_commit":""
+   }
+}

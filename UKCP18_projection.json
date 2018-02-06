@@ -1,0 +1,27 @@
+{
+    "projection": {
+        "transverse_mercator": {
+            "epsg": 27700,
+            "false_easting": 400000.0,
+            "false_northing": -100000.0,
+            "geogcs": 4277,
+            "latitude_of_projection_origin": 49.0,
+            "name": "OSGB 1936 / British National Grid",
+            "projection": "Transverse Mercator",
+            "long_name": "Transverse Mercator Projection",
+            "grid_mapping_name": "transverse_mercator",
+            "scale_factor_at_central_meridian": 0.9996012717,
+            "longitude_of_prime_meridian": 0.0,
+            "longitude_of_central_meridian": -2.0,
+            "semi_major_axis": 6377563.396,
+            "semi_minor_axis": 6356256.909,
+            "unit": "metre"
+        }
+    },
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Tue Feb 06 07:45:06 2018 -0100",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}
