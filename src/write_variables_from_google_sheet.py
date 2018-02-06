@@ -1,14 +1,17 @@
 from __future__ import print_function
-import httplib2
-import os
+
+import argparse
+import io
 import json
+import os
 
 from apiclient import discovery
+import httplib2
 from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
 
-import argparse
+
 flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
 
 
@@ -57,7 +60,7 @@ def get_spreadsheet():
     service = discovery.build('sheets', 'v4', http=http,
                               discoveryServiceUrl=discoveryUrl)
     spreadsheetId = '1Ij3R3skvYhKnMSqXB6KHaxH0BSST5R0DI8zp2Qi82vw'
-    rangeName = 'Climate_variables!A2:V'
+    rangeName = 'Climate_variables!A2:X'
     result = service.spreadsheets().values().get(
         spreadsheetId=spreadsheetId, range=rangeName).execute()
     return result.get('values', [])
@@ -96,25 +99,27 @@ def process_data(data):
     notes = set()
     cmip6_cmor_tables_row_id = set()
 
-    col_time_step = 2
-    col_long_name = 3
-    col_description = 4
-    col_plot_label = 5
-    col_standard_name = 6
-    col_units = 7
-    col_level = 8
-    col_cmip6_var_id = 9
-    col_time_averaging = 10
-    col_observations = 11
-    col_marine = 12
-    col_land_strand_1 = 13
-    col_land_strand_2 = 14
-    col_land_strand_3_12km = 15
-    col_land_strand_3_2km = 16
-    col_notes = 17
-    col_um_stash = 18
-    col_cmip6_standard_name = 19
-    col_cmip6_cmor_tables_row_id = 20
+    col_anomaly_type = 2
+    col_time_step = 3
+    col_long_name = 4
+    col_description = 5
+    col_plot_label = 6
+    col_standard_name = 7
+    col_units = 8
+    col_label_units = 9
+    col_level = 10
+    col_cmip6_var_id = 11
+    col_time_averaging = 12
+    col_observations = 13
+    col_marine = 14
+    col_land_strand_1 = 15
+    col_land_strand_2 = 16
+    col_land_strand_3_12km = 17
+    col_land_strand_3_2km = 18
+    col_notes = 19
+    col_um_stash = 20
+    col_cmip6_standard_name = 21
+    col_cmip6_cmor_tables_row_id = 22
 
     for row in data:
         if variable == {}:
@@ -126,8 +131,13 @@ def process_data(data):
             if (row[col_standard_name] != "" and
                     row[col_standard_name] != "None"):
                 variable['standard_name'] = row[col_standard_name]
+            if (row[col_anomaly_type] != "" and
+                    row[col_anomaly_type] != "none"):
+                variable['anomaly_type'] = row[col_anomaly_type]
             if row[col_units] != "":
                 variable['units'] = row[col_units]
+            if row[col_label_units] != "":
+                variable['label_units'] = row[col_label_units].encode('utf-8')
             if row[col_level] != "":
                 variable['level'] = row[col_level]
 
@@ -196,9 +206,11 @@ def main():
 
     output = {'variable': variables}
 
-    with open('../UKCP18_variable.json', 'w') as the_file:
-        the_file.write(json.dumps(output, sort_keys=True,
-                                  indent=4, separators=(',', ': ')))
+    with io.open('../UKCP18_variable.json', 'w', encoding='utf8') as json_file:
+        data = json.dumps(output, sort_keys=True, indent=4,
+                          separators=(',', ': '), ensure_ascii=False,
+                          encoding='utf8')
+        json_file.write(unicode(data))
 
 
 if __name__ == '__main__':
