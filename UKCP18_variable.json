@@ -2,18 +2,19 @@
     "variable": {
         "clt": {
             "cmip6_cmor_tables_row_id": [
-                "02204"
+                "206",
+                "209"
             ],
-            "cmip6_name": "%",
-            "cmip6_standard_name": "NCIC have sunshine hours",
-            "description": "Cloud area fraction",
-            "level": "%",
-            "long_name": "day",
+            "cmip6_name": "clt",
+            "cmip6_standard_name": "cloud_area_fraction",
+            "description": "Total cloud",
+            "label_units": "%",
+            "long_name": "Cloud area fraction",
             "notes": [
-                "Y"
+                "NCIC have sunshine hours"
             ],
-            "plot_label": "Total cloud",
-            "standard_name": "Total cloud (%)",
+            "plot_label": "Total cloud (%)",
+            "standard_name": "cloud_area_fraction",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -22,26 +23,32 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "cloud_area_fraction"
+            "time_step": [
+                "day",
+                "mon"
+            ],
+            "um_stash": "02204",
+            "units": "%"
         },
         "cltAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "02204"
+                "206",
+                "209"
             ],
-            "cmip6_name": "%",
-            "cmip6_standard_name": "NCIC have sunshine hours",
-            "description": "Cloud area fraction",
-            "level": "%",
-            "long_name": "day",
+            "cmip6_name": "clt",
+            "cmip6_standard_name": "cloud_area_fraction",
+            "description": "Total cloud",
+            "label_units": "%",
+            "long_name": "Cloud area fraction",
             "notes": [
-                "Y"
+                "NCIC have sunshine hours"
             ],
-            "plot_label": "Total cloud",
-            "standard_name": "Total cloud anomaly (%)",
+            "plot_label": "Total cloud anomaly (%)",
+            "standard_name": "cloud_area_fraction",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -50,26 +57,30 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "cloud_area_fraction"
+            "time_step": [
+                "day",
+                "mon"
+            ],
+            "um_stash": "02204",
+            "units": "%"
         },
         "flashrate": {
             "cmip6_cmor_tables_row_id": [
-                "21104"
+                "535"
             ],
-            "cmip6_name": "1",
-            "cmip6_standard_name": "Intended we'll still do these, but as LS3 they're not a priority at present",
-            "description": "Lightning flash rate??",
-            "level": "1",
-            "long_name": "day",
+            "cmip6_name": "flashrate",
+            "cmip6_standard_name": "lightning_flash_rate",
+            "description": "Lightning",
+            "label_units": "1",
+            "long_name": "Lightning flash rate??",
             "notes": [
-                "Y"
+                "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
-            "plot_label": "Lightning",
-            "standard_name": "Lightning (1)",
+            "plot_label": "Lightning (1)",
+            "standard_name": "lightning_flash_rate",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -78,26 +89,30 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "accumulated"
             ],
-            "um_stash": "Y",
-            "units": "lightning_flash_rate"
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "21104",
+            "units": "1"
         },
         "flashrateAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "21104"
+                "535"
             ],
-            "cmip6_name": "1",
-            "cmip6_standard_name": "Intended we'll still do these, but as LS3 they're not a priority at present",
-            "description": "Lightning flash rate??",
-            "level": "1",
-            "long_name": "day",
+            "cmip6_name": "flashrate",
+            "cmip6_standard_name": "lightning_flash_rate",
+            "description": "Lightning",
+            "label_units": "1",
+            "long_name": "Lightning flash rate??",
             "notes": [
-                "Y"
+                "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
-            "plot_label": "Lightning",
-            "standard_name": "Lightning anomaly (1)",
+            "plot_label": "Lightning anomaly (1)",
+            "standard_name": "lightning_flash_rate",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -106,26 +121,23 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "accumulated"
             ],
-            "um_stash": "Y",
-            "units": "lightning_flash_rate"
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "21104",
+            "units": "1"
         },
         "fog": {
-            "cmip6_cmor_tables_row_id": [
-                "03248"
-            ],
-            "cmip6_name": "1",
-            "cmip6_standard_name": "Intended we'll still do these, but as LS3 they're not a priority at present",
-            "description": "??",
-            "level": "1",
-            "long_name": "day",
+            "description": "Fog",
+            "label_units": "1",
+            "long_name": "??",
             "notes": [
-                "Y"
+                "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
-            "plot_label": "Fog",
-            "standard_name": "Fog (1)",
+            "plot_label": "Fog (1)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -134,26 +146,24 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "None"
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "03248",
+            "units": "1"
         },
         "fogAnom": {
-            "cmip6_cmor_tables_row_id": [
-                "03248"
-            ],
-            "cmip6_name": "1",
-            "cmip6_standard_name": "Intended we'll still do these, but as LS3 they're not a priority at present",
-            "description": "??",
-            "level": "1",
-            "long_name": "day",
+            "anomaly_type": "absolute_change",
+            "description": "Fog",
+            "label_units": "1",
+            "long_name": "??",
             "notes": [
-                "Y"
+                "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
-            "plot_label": "Fog",
-            "standard_name": "Fog anomaly (1)",
+            "plot_label": "Fog anomaly (1)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -162,26 +172,23 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "None"
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "03248",
+            "units": "1"
         },
         "hail": {
-            "cmip6_cmor_tables_row_id": [
-                "21102"
-            ],
-            "cmip6_name": "1",
-            "cmip6_standard_name": "Intended we'll still do these, but as LS3 they're not a priority at present",
-            "description": "??",
-            "level": "1",
-            "long_name": "day",
+            "description": "Hail (Graupel)",
+            "label_units": "1",
+            "long_name": "??",
             "notes": [
-                "Y"
+                "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
-            "plot_label": "Hail (Graupel)",
-            "standard_name": "Hail (Graupel) (1)",
+            "plot_label": "Hail (Graupel) (1)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -190,26 +197,24 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "None"
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "21102",
+            "units": "1"
         },
         "hailAnom": {
-            "cmip6_cmor_tables_row_id": [
-                "21102"
-            ],
-            "cmip6_name": "1",
-            "cmip6_standard_name": "Intended we'll still do these, but as LS3 they're not a priority at present",
-            "description": "??",
-            "level": "1",
-            "long_name": "day",
+            "anomaly_type": "absolute_change",
+            "description": "Hail (Graupel)",
+            "label_units": "1",
+            "long_name": "??",
             "notes": [
-                "Y"
+                "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
-            "plot_label": "Hail (Graupel)",
-            "standard_name": "Hail (Graupel) anomaly (1)",
+            "plot_label": "Hail (Graupel) anomaly (1)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -218,28 +223,33 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "None"
+            "time_step": [
+                "day"
+            ],
+            "um_stash": "21102",
+            "units": "1"
         },
         "hurs": {
             "cmip6_cmor_tables_row_id": [
-                "03245",
-                "Not in stash"
+                "678",
+                "679",
+                "681"
             ],
-            "cmip6_name": "%",
-            "cmip6_standard_name": "Post-process from instantaneous temp and spec humidity",
+            "cmip6_name": "hurs",
+            "cmip6_standard_name": "relative_humidity",
             "description": "Relative humidity",
-            "level": "%",
-            "long_name": "3hr",
+            "label_units": "%",
+            "level": "1.5m",
+            "long_name": "Relative humidity",
             "notes": [
-                "WPS",
-                "Y"
+                "Post-process from instantaneous temp and spec humidity",
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Relative humidity",
-            "standard_name": "Relative humidity at 1.5m (%)",
+            "plot_label": "Relative humidity at 1.5m (%)",
+            "standard_name": "relative_humidity",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -249,30 +259,37 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "none"
+                "3hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "PP",
-            "units": "relative_humidity"
+            "um_stash": "Not in stash",
+            "units": "%"
         },
         "hursAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03245",
-                "Not in stash"
+                "678",
+                "679",
+                "681"
             ],
-            "cmip6_name": "%",
-            "cmip6_standard_name": "Post-process from instantaneous temp and spec humidity",
+            "cmip6_name": "hurs",
+            "cmip6_standard_name": "relative_humidity",
             "description": "Relative humidity",
-            "level": "%",
-            "long_name": "3hr",
+            "label_units": "%",
+            "level": "1.5m",
+            "long_name": "Relative humidity",
             "notes": [
-                "WPS",
-                "Y"
+                "Post-process from instantaneous temp and spec humidity",
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Relative humidity",
-            "standard_name": "Relative humidity anomaly at 1.5m (%)",
+            "plot_label": "Relative humidity anomaly at 1.5m (%)",
+            "standard_name": "relative_humidity",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -282,27 +299,32 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "3hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "PP",
-            "units": "relative_humidity"
+            "um_stash": "Not in stash",
+            "units": "%"
         },
         "huss": {
             "cmip6_cmor_tables_row_id": [
-                "03237"
+                "704",
+                "705",
+                "707"
             ],
-            "cmip6_name": "1",
+            "cmip6_name": "huss",
+            "cmip6_standard_name": "specific_humidity",
             "description": "Specific humidity",
-            "level": "1",
-            "long_name": "day",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Specific humidity",
-            "standard_name": "Specific humidity at 1.5m (1)",
+            "label_units": "1",
+            "level": "1.5m",
+            "long_name": "Specific humidity",
+            "plot_label": "Specific humidity at 1.5m (1)",
+            "standard_name": "specific_humidity",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -312,27 +334,32 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "none"
+                "3hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "specific_humidity"
+            "um_stash": "03237",
+            "units": "1"
         },
         "hussAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03237"
+                "704",
+                "705",
+                "707"
             ],
-            "cmip6_name": "%",
+            "cmip6_name": "huss",
+            "cmip6_standard_name": "specific_humidity",
             "description": "Specific humidity",
-            "level": "%",
-            "long_name": "day",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Specific humidity",
-            "standard_name": "Specific humidity anomaly at 1.5m (%)",
+            "label_units": "%",
+            "level": "1.5m",
+            "long_name": "Specific humidity",
+            "plot_label": "Specific humidity anomaly at 1.5m (%)",
+            "standard_name": "specific_humidity",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -342,21 +369,22 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "3hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "specific_humidity"
+            "um_stash": "03237",
+            "units": "%"
         },
         "locParamTrend": {
-            "cmip6_name": "m y-1",
             "description": "Trend in skew surge location parameter",
-            "level": "m y-1",
-            "long_name": "n/a",
-            "plot_label": "Trend in skew surge location parameter",
-            "standard_name": "Trend in skew surge location parameter (m year-1)",
+            "label_units": "m y-1",
+            "long_name": "Trend in skew surge location parameter",
+            "plot_label": "Trend in skew surge location parameter (m year-1)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -366,18 +394,23 @@
                 "observations"
             ],
             "time_step": [
-                "none"
+                "n/a"
             ],
-            "units": "None"
+            "units": "m y-1"
         },
         "pet": {
-            "cmip6_name": "mm/day",
-            "cmip6_standard_name": "To be post-processed",
+            "cmip6_cmor_tables_row_id": [
+                "??"
+            ],
+            "cmip6_name": "??",
+            "cmip6_standard_name": "??",
             "description": "Potential evapotranspiration rate",
-            "level": "mm/day",
-            "long_name": "??",
-            "plot_label": "Potential evapotranspiration rate",
-            "standard_name": "Potential evapotranspiration rate (mm/day)",
+            "label_units": "mm/day",
+            "long_name": "Potential evapotranspiration rate",
+            "notes": [
+                "To be post-processed"
+            ],
+            "plot_label": "Potential evapotranspiration rate (mm/day)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -386,19 +419,29 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "units": "None"
+            "time_step": [
+                "??"
+            ],
+            "um_stash": "None",
+            "units": "mm/day"
         },
         "petAnom": {
-            "cmip6_name": "%",
-            "cmip6_standard_name": "To be post-processed",
+            "anomaly_type": "absolute_change",
+            "cmip6_cmor_tables_row_id": [
+                "??"
+            ],
+            "cmip6_name": "??",
+            "cmip6_standard_name": "??",
             "description": "Potential evapotranspiration rate",
-            "level": "%",
-            "long_name": "??",
-            "plot_label": "Potential evapotranspiration rate",
-            "standard_name": "Potential evapotranspiration rate anomaly (%)",
+            "label_units": "%",
+            "long_name": "Potential evapotranspiration rate",
+            "notes": [
+                "To be post-processed"
+            ],
+            "plot_label": "Potential evapotranspiration rate anomaly (%)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -407,26 +450,32 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "units": "None"
+            "time_step": [
+                "??"
+            ],
+            "um_stash": "None",
+            "units": "%"
         },
         "pr": {
             "cmip6_cmor_tables_row_id": [
-                "05216"
+                "1164",
+                "1166",
+                "1169"
             ],
-            "cmip6_name": "mm/day",
-            "cmip6_standard_name": "Precip mass flux (kg/m\u00b2/s, STASH 05216) is numerically equivalent to precip volume flux (mm\u00b3/mm\u00b2/s = mm/s), assuming constant water density of 1000 kg/m\u00b3.",
+            "cmip6_name": "pr",
+            "cmip6_standard_name": "precipitation_flux",
             "description": "Precipitation rate",
-            "level": "mm/day",
-            "long_name": "1hr",
+            "label_units": "mm/day",
+            "long_name": "Precipitation rate",
             "notes": [
-                "WPS",
-                "Y"
+                "Precip mass flux (kg/m²/s, STASH 05216) is numerically equivalent to precip volume flux (mm³/mm²/s = mm/s), assuming constant water density of 1000 kg/m³.",
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Precipitation rate",
-            "standard_name": "Precipitation rate (mm/day)",
+            "plot_label": "Precipitation rate (mm/day)",
+            "standard_name": "lwe_precipitation_rate",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -435,27 +484,36 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "LTA",
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "lwe_precipitation_rate"
+            "time_step": [
+                "1hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "05216",
+            "units": "mm/day"
         },
         "prAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "05216"
+                "1164",
+                "1166",
+                "1169"
             ],
-            "cmip6_name": "%",
-            "cmip6_standard_name": "Precip mass flux (kg/m\u00b2/s, STASH 05216) is numerically equivalent to precip volume flux (mm\u00b3/mm\u00b2/s = mm/s), assuming constant water density of 1000 kg/m\u00b3.",
+            "cmip6_name": "pr",
+            "cmip6_standard_name": "precipitation_flux",
             "description": "Precipitation rate",
-            "level": "%",
-            "long_name": "1hr",
+            "label_units": "%",
+            "long_name": "Precipitation rate",
             "notes": [
-                "WPS",
-                "Y"
+                "Precip mass flux (kg/m²/s, STASH 05216) is numerically equivalent to precip volume flux (mm³/mm²/s = mm/s), assuming constant water density of 1000 kg/m³.",
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Precipitation rate",
-            "standard_name": "Precipitation rate anomaly (%)",
+            "plot_label": "Precipitation rate anomaly (%)",
+            "standard_name": "lwe_precipitation_rate",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -464,26 +522,34 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "LTA",
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "lwe_precipitation_rate"
+            "time_step": [
+                "1hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "05216",
+            "units": "%"
         },
         "psl": {
             "cmip6_cmor_tables_row_id": [
-                "16222"
+                "1235",
+                "1237",
+                "1240"
             ],
-            "cmip6_name": "hPa",
-            "description": "Pressure at mean sea level",
-            "level": "hPa",
-            "long_name": "6hr",
+            "cmip6_name": "psl",
+            "cmip6_standard_name": "air_pressure_at_sea_level",
+            "description": "Sea level pressure",
+            "label_units": "hPa",
+            "long_name": "Pressure at mean sea level",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Sea level pressure",
-            "standard_name": "Sea level pressure (hPa)",
+            "plot_label": "Sea level pressure (hPa)",
+            "standard_name": "air_pressure_at_sea_level",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -492,26 +558,36 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "LTA",
+                "intantaneous",
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "air_pressure_at_sea_level"
+            "time_step": [
+                "6hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "16222",
+            "units": "hPa"
         },
         "pslAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "16222"
+                "1235",
+                "1237",
+                "1240"
             ],
-            "cmip6_name": "hPa",
-            "description": "Pressure at mean sea level",
-            "level": "hPa",
-            "long_name": "6hr",
+            "cmip6_name": "psl",
+            "cmip6_standard_name": "air_pressure_at_sea_level",
+            "description": "Sea level pressure",
+            "label_units": "hPa",
+            "long_name": "Pressure at mean sea level",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Sea level pressure",
-            "standard_name": "Sea level pressure anomaly (hPa)",
+            "plot_label": "Sea level pressure anomaly (hPa)",
+            "standard_name": "air_pressure_at_sea_level",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -520,23 +596,28 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "LTA",
+                "intantaneous",
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "air_pressure_at_sea_level"
+            "time_step": [
+                "6hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "16222",
+            "units": "hPa"
         },
         "pv": {
-            "cmip6_name": "hPa",
-            "cmip6_standard_name": "Obs availability TBC",
-            "description": "partial pressure of water vapour",
-            "level": "hPa",
-            "long_name": "mon",
+            "description": "Vapour pressure",
+            "label_units": "hPa",
+            "long_name": "partial pressure of water vapour",
             "notes": [
-                "WPS"
+                "Obs availability TBC"
             ],
-            "plot_label": "Vapour pressure",
-            "standard_name": "Vapour pressure (hPa)",
+            "plot_label": "Vapour pressure (hPa)",
+            "standard_name": "water_vapor_partial_pressure_in_air",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -545,22 +626,24 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "LTA"
             ],
-            "units": "water_vapor_partial_pressure_in_air"
+            "time_step": [
+                "mon"
+            ],
+            "units": "hPa"
         },
         "pvAnom": {
-            "cmip6_name": "hPa",
-            "cmip6_standard_name": "Obs availability TBC",
-            "description": "partial pressure of water vapour",
-            "level": "hPa",
-            "long_name": "mon",
+            "anomaly_type": "absolute_change",
+            "description": "Vapour pressure",
+            "label_units": "hPa",
+            "long_name": "partial pressure of water vapour",
             "notes": [
-                "WPS"
+                "Obs availability TBC"
             ],
-            "plot_label": "Vapour pressure",
-            "standard_name": "Vapour pressure anomaly (hPa)",
+            "plot_label": "Vapour pressure anomaly (hPa)",
+            "standard_name": "water_vapor_partial_pressure_in_air",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -569,24 +652,19 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "LTA"
             ],
-            "units": "water_vapor_partial_pressure_in_air"
+            "time_step": [
+                "mon"
+            ],
+            "units": "hPa"
         },
         "rain5DayAccumMax": {
-            "cmip6_cmor_tables_row_id": [
-                "05216"
-            ],
-            "cmip6_name": "mm",
-            "description": "Rainfall accumulation",
-            "level": "mm",
-            "long_name": "annual",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Max. 5-day accumulative rainfall",
-            "standard_name": "Max. 5-day accumulative rainfall (mm)",
+            "description": "Max. 5-day accumulative rainfall",
+            "label_units": "mm",
+            "long_name": "Rainfall accumulation",
+            "plot_label": "Max. 5-day accumulative rainfall (mm)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -595,25 +673,21 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "total"
             ],
-            "um_stash": "PP",
-            "units": "None"
+            "time_step": [
+                "annual"
+            ],
+            "um_stash": "05216",
+            "units": "mm"
         },
         "rain5DayAccumMaxAnom": {
-            "cmip6_cmor_tables_row_id": [
-                "05216"
-            ],
-            "cmip6_name": "%",
-            "description": "Rainfall accumulation",
-            "level": "%",
-            "long_name": "annual",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Max. 5-day accumulative rainfall",
-            "standard_name": "Max. 5-day accumulative rainfall anomaly (%)",
+            "anomaly_type": "absolute_change",
+            "description": "Max. 5-day accumulative rainfall",
+            "label_units": "%",
+            "long_name": "Rainfall accumulation",
+            "plot_label": "Max. 5-day accumulative rainfall anomaly (%)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -622,26 +696,28 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "total"
             ],
-            "um_stash": "PP",
-            "units": "None"
+            "time_step": [
+                "annual"
+            ],
+            "um_stash": "05216",
+            "units": "%"
         },
         "rls": {
             "cmip6_cmor_tables_row_id": [
-                "02201",
-                "02207"
+                "1317",
+                "1318",
+                "?"
             ],
-            "cmip6_name": "W m-2",
+            "cmip6_name": "rls",
+            "cmip6_standard_name": "surface_net_downward_longwave_flux",
             "description": "Net Surface long wave flux",
-            "level": "W m-2",
-            "long_name": "mon",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Net Surface long wave flux",
-            "standard_name": "Net Surface long wave flux (W m-2)",
+            "label_units": "W m-2",
+            "long_name": "Net Surface long wave flux",
+            "plot_label": "Net Surface long wave flux (W m-2)",
+            "standard_name": "surface_net_downward_longwave_flux",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -650,26 +726,31 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "surface_net_downward_longwave_flux"
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "02201",
+            "units": "W m-2"
         },
         "rlsAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "02201",
-                "02207"
+                "1317",
+                "1318",
+                "?"
             ],
-            "cmip6_name": "W m-2",
+            "cmip6_name": "rls",
+            "cmip6_standard_name": "surface_net_downward_longwave_flux",
             "description": "Net Surface long wave flux",
-            "level": "W m-2",
-            "long_name": "mon",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Net Surface long wave flux",
-            "standard_name": "Net Surface long wave flux anomaly (W m-2)",
+            "label_units": "W m-2",
+            "long_name": "Net Surface long wave flux",
+            "plot_label": "Net Surface long wave flux anomaly (W m-2)",
+            "standard_name": "surface_net_downward_longwave_flux",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -678,23 +759,31 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "surface_net_downward_longwave_flux"
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "02201",
+            "units": "W m-2"
         },
         "rsds": {
             "cmip6_cmor_tables_row_id": [
-                "01235"
+                "1371"
             ],
-            "cmip6_name": "W m-2",
-            "cmip6_standard_name": "Glen's, rsds, standard name: surface downwelling short wave flux in air, long name: surface downwelling short wave radiation, STASH:01235 LBPROC 128",
-            "description": "Downward surface shortwave flux",
-            "level": "W m-2",
-            "long_name": "mon",
-            "plot_label": "Total downward shortwave flux",
-            "standard_name": "Total downward shortwave flux (W m-2)",
+            "cmip6_name": "rsds",
+            "cmip6_standard_name": "surface_downwelling_shortwave_flux_in_air",
+            "description": "Total downward shortwave flux",
+            "label_units": "W m-2",
+            "long_name": "Downward surface shortwave flux",
+            "notes": [
+                "Glen's, rsds, standard name: surface downwelling short wave flux in air, long name: surface downwelling short wave radiation, STASH:01235 LBPROC 128"
+            ],
+            "plot_label": "Total downward shortwave flux (W m-2)",
+            "standard_name": "surface_downwelling_shortwave_flux_in_air",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -703,22 +792,30 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "units": "surface_downwelling_shortwave_flux_in_air"
+            "time_step": [
+                "mon"
+            ],
+            "um_stash": "01235",
+            "units": "W m-2"
         },
         "rsdsAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "01235"
+                "1371"
             ],
-            "cmip6_name": "W m-2",
-            "cmip6_standard_name": "Glen's, rsds, standard name: surface downwelling short wave flux in air, long name: surface downwelling short wave radiation, STASH:01235 LBPROC 128",
-            "description": "Downward surface shortwave flux",
-            "level": "W m-2",
-            "long_name": "mon",
-            "plot_label": "Total downward shortwave flux",
-            "standard_name": "Total downward shortwave flux anomaly (W m-2)",
+            "cmip6_name": "rsds",
+            "cmip6_standard_name": "surface_downwelling_shortwave_flux_in_air",
+            "description": "Total downward shortwave flux",
+            "label_units": "W m-2",
+            "long_name": "Downward surface shortwave flux",
+            "notes": [
+                "Glen's, rsds, standard name: surface downwelling short wave flux in air, long name: surface downwelling short wave radiation, STASH:01235 LBPROC 128"
+            ],
+            "plot_label": "Total downward shortwave flux anomaly (W m-2)",
+            "standard_name": "surface_downwelling_shortwave_flux_in_air",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -727,24 +824,28 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "units": "surface_downwelling_shortwave_flux_in_air"
+            "time_step": [
+                "mon"
+            ],
+            "um_stash": "01235",
+            "units": "W m-2"
         },
         "rss": {
             "cmip6_cmor_tables_row_id": [
-                "01201"
+                "1399",
+                "1400",
+                "?"
             ],
-            "cmip6_name": "W m-2",
+            "cmip6_name": "rss",
+            "cmip6_standard_name": "surface_net_downward_shortwave_flux",
             "description": "Net Surface short wave flux",
-            "level": "W m-2",
-            "long_name": "mon",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Net Surface short wave flux",
-            "standard_name": "Net Surface short wave flux (W m-2)",
+            "label_units": "W m-2",
+            "long_name": "Net Surface short wave flux",
+            "plot_label": "Net Surface short wave flux (W m-2)",
+            "standard_name": "surface_net_downward_shortwave_flux",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -753,25 +854,31 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "surface_net_downward_shortwave_flux"
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "01201",
+            "units": "W m-2"
         },
         "rssAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "01201"
+                "1399",
+                "1400",
+                "?"
             ],
-            "cmip6_name": "W m-2",
+            "cmip6_name": "rss",
+            "cmip6_standard_name": "surface_net_downward_shortwave_flux",
             "description": "Net Surface short wave flux",
-            "level": "W m-2",
-            "long_name": "mon",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Net Surface short wave flux",
-            "standard_name": "Net Surface short wave flux anomaly (W m-2)",
+            "label_units": "W m-2",
+            "long_name": "Net Surface short wave flux",
+            "plot_label": "Net Surface short wave flux anomaly (W m-2)",
+            "standard_name": "surface_net_downward_shortwave_flux",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -780,26 +887,27 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "um_stash": "Y",
-            "units": "surface_net_downward_shortwave_flux"
+            "time_step": [
+                "3hr",
+                "day",
+                "mon"
+            ],
+            "um_stash": "01201",
+            "units": "W m-2"
         },
         "se": {
-            "cmip6_cmor_tables_row_id": [
-                "03223"
-            ],
-            "cmip6_name": "mm/day",
-            "cmip6_standard_name": "evspsbl",
             "description": "Surface evaporation",
-            "level": "mm/day",
-            "long_name": "day",
+            "label_units": "mm/day",
+            "level": "Surface",
+            "long_name": "Surface evaporation",
             "notes": [
-                "M"
+                "evspsbl"
             ],
-            "plot_label": "Surface evaporation",
-            "standard_name": "Surface evaporation at Surface (mm/day)",
+            "plot_label": "Surface evaporation at Surface (mm/day)",
+            "standard_name": "surface_upward_water_flux",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -809,26 +917,24 @@
                 "observations"
             ],
             "time_averaging": [
-                "Surface"
+                "mean"
             ],
             "time_step": [
-                "none"
+                "day"
             ],
-            "um_stash": "M",
-            "units": "surface_upward_water_flux"
+            "um_stash": "03223",
+            "units": "mm/day"
         },
         "seAnom": {
-            "cmip6_cmor_tables_row_id": [
-                "03223"
-            ],
-            "cmip6_standard_name": "evspsbl",
+            "anomaly_type": "absolute_change",
             "description": "Surface evaporation",
-            "long_name": "day",
+            "level": "Surface",
+            "long_name": "Surface evaporation",
             "notes": [
-                "M"
+                "evspsbl"
             ],
-            "plot_label": "Surface evaporation",
-            "standard_name": "Surface evaporation anomaly at Surface ()",
+            "plot_label": "Surface evaporation anomaly at Surface ()",
+            "standard_name": "surface_upward_water_flux",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -838,29 +944,32 @@
                 "observations"
             ],
             "time_averaging": [
-                "Surface"
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "day"
             ],
-            "um_stash": "M",
-            "units": "surface_upward_water_flux"
+            "um_stash": "03223"
         },
         "sfcWind": {
             "cmip6_cmor_tables_row_id": [
-                "03227",
-                "03249"
+                "1474",
+                "1476",
+                "1477",
+                "1479"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Wind speed at 10m",
-            "level": "m s-1",
-            "long_name": "6hr",
+            "cmip6_name": "sfcWind",
+            "cmip6_standard_name": "wind_speed",
+            "description": "Wind speed",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Wind speed at 10m",
             "notes": [
-                "WPS",
-                "Y"
+                "Look also at post-processing this from daily mean U and V, as output from model may be inconsistent",
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Wind speed",
-            "standard_name": "Wind speed at 10m (m s-1)",
+            "plot_label": "Wind speed at 10m (m s-1)",
+            "standard_name": "wind_speed",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -870,29 +979,38 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "LTA",
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "none"
+                "3hr",
+                "6hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "wind_speed"
+            "units": "m s-1"
         },
         "sfcWindAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03227",
-                "03249"
+                "1474",
+                "1476",
+                "1477",
+                "1479"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Wind speed at 10m",
-            "level": "m s-1",
-            "long_name": "6hr",
+            "cmip6_name": "sfcWind",
+            "cmip6_standard_name": "wind_speed",
+            "description": "Wind speed",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Wind speed at 10m",
             "notes": [
-                "WPS",
-                "Y"
+                "Look also at post-processing this from daily mean U and V, as output from model may be inconsistent",
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Wind speed",
-            "standard_name": "Wind speed anomaly at 10m (m s-1)",
+            "plot_label": "Wind speed anomaly at 10m (m s-1)",
+            "standard_name": "wind_speed",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -902,27 +1020,30 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "LTA",
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "3hr",
+                "6hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "wind_speed"
+            "units": "m s-1"
         },
         "snd": {
             "cmip6_cmor_tables_row_id": [
-                "00376"
+                "1616",
+                "1617"
             ],
-            "cmip6_name": "mm",
+            "cmip6_name": "snd",
+            "cmip6_standard_name": "surface_snow_thickness",
             "description": "Snow depth",
-            "level": "mm",
-            "long_name": "day",
-            "notes": [
-                "M"
-            ],
-            "plot_label": "Snow depth",
-            "standard_name": "Snow depth (mm)",
+            "label_units": "mm",
+            "long_name": "Snow depth",
+            "plot_label": "Snow depth (mm)",
+            "standard_name": "surface_snow_thickness",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -932,24 +1053,25 @@
                 "observations"
             ],
             "time_step": [
-                "none"
+                "day",
+                "mon"
             ],
-            "um_stash": "M",
-            "units": "surface_snow_thickness"
+            "um_stash": "00376",
+            "units": "mm"
         },
         "sndAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "00376"
+                "1616",
+                "1617"
             ],
-            "cmip6_name": "mm",
+            "cmip6_name": "snd",
+            "cmip6_standard_name": "surface_snow_thickness",
             "description": "Snow depth",
-            "level": "mm",
-            "long_name": "day",
-            "notes": [
-                "M"
-            ],
-            "plot_label": "Snow depth",
-            "standard_name": "Snow depth anomaly (mm)",
+            "label_units": "mm",
+            "long_name": "Snow depth",
+            "plot_label": "Snow depth anomaly (mm)",
+            "standard_name": "surface_snow_thickness",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -959,19 +1081,21 @@
                 "observations"
             ],
             "time_step": [
-                "absolute_change"
+                "day",
+                "mon"
             ],
-            "um_stash": "M",
-            "units": "surface_snow_thickness"
+            "um_stash": "00376",
+            "units": "mm"
         },
         "snowLying": {
-            "cmip6_name": "mm",
-            "cmip6_standard_name": "Availability TBC",
-            "description": "Depth of snow lying on the ground",
-            "level": "mm",
-            "long_name": "mon",
-            "plot_label": "Snow lying",
-            "standard_name": "Snow lying (mm)",
+            "description": "Snow lying",
+            "label_units": "mm",
+            "long_name": "Depth of snow lying on the ground",
+            "notes": [
+                "Availability TBC"
+            ],
+            "plot_label": "Snow lying (mm)",
+            "standard_name": "surface_snow_binary_mask",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -980,19 +1104,24 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "LTA"
             ],
-            "units": "surface_snow_binary_mask"
+            "time_step": [
+                "mon"
+            ],
+            "units": "mm"
         },
         "snowLyingAnom": {
-            "cmip6_name": "mm",
-            "cmip6_standard_name": "Availability TBC",
-            "description": "Depth of snow lying on the ground",
-            "level": "mm",
-            "long_name": "mon",
-            "plot_label": "Snow lying",
-            "standard_name": "Snow lying anomaly (mm)",
+            "anomaly_type": "absolute_change",
+            "description": "Snow lying",
+            "label_units": "mm",
+            "long_name": "Depth of snow lying on the ground",
+            "notes": [
+                "Availability TBC"
+            ],
+            "plot_label": "Snow lying anomaly (mm)",
+            "standard_name": "surface_snow_binary_mask",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1001,19 +1130,23 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "LTA"
             ],
-            "units": "surface_snow_binary_mask"
+            "time_step": [
+                "mon"
+            ],
+            "units": "mm"
         },
         "sse": {
-            "cmip6_name": "m",
-            "cmip6_standard_name": "For week-long case studies",
-            "description": "Sea surface elevation",
-            "level": "m",
-            "long_name": "1hr",
-            "plot_label": "Sea surface elevation above the mean level",
-            "standard_name": "Sea surface elevation above the mean level (m)",
+            "description": "Sea surface elevation above the mean level",
+            "label_units": "m",
+            "long_name": "Sea surface elevation",
+            "notes": [
+                "For week-long case studies"
+            ],
+            "plot_label": "Sea surface elevation above the mean level (m)",
+            "standard_name": "sea_surface_height_above_mean_sea_level",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1023,18 +1156,20 @@
                 "observations"
             ],
             "time_step": [
-                "none"
+                "1hr"
             ],
-            "units": "sea_surface_height_above_mean_sea_level"
+            "units": "m"
         },
         "sseAnom": {
-            "cmip6_name": "m",
-            "cmip6_standard_name": "For week-long case studies",
-            "description": "Sea surface elevation",
-            "level": "m",
-            "long_name": "1hr",
-            "plot_label": "Sea surface elevation above the mean level",
-            "standard_name": "Sea surface elevation above the mean level anomaly (m)",
+            "anomaly_type": "absolute_change",
+            "description": "Sea surface elevation above the mean level",
+            "label_units": "m",
+            "long_name": "Sea surface elevation",
+            "notes": [
+                "For week-long case studies"
+            ],
+            "plot_label": "Sea surface elevation above the mean level anomaly (m)",
+            "standard_name": "sea_surface_height_above_mean_sea_level",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1044,18 +1179,18 @@
                 "observations"
             ],
             "time_step": [
-                "absolute_change"
+                "1hr"
             ],
-            "units": "sea_surface_height_above_mean_sea_level"
+            "units": "m"
         },
         "stillWaterReturnLevel": {
-            "cmip6_name": "m",
-            "cmip6_standard_name": "Return level to be plotted against return period. Log scale for return period. How will uncertainty be made available? Separate variable?",
-            "description": "Still water return level ",
-            "level": "m",
-            "long_name": "n/a",
-            "plot_label": "Still water return level",
-            "standard_name": "Still water return level (m)",
+            "description": "Still water return level",
+            "label_units": "m",
+            "long_name": "Still water return level ",
+            "notes": [
+                "Return level to be plotted against return period. Log scale for return period. How will uncertainty be made available? Separate variable?"
+            ],
+            "plot_label": "Still water return level (m)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1065,21 +1200,19 @@
                 "observations"
             ],
             "time_step": [
-                "none"
+                "n/a"
             ],
-            "units": "None"
+            "units": "m"
         },
         "sun": {
-            "cmip6_name": "h",
-            "cmip6_standard_name": "Post-process from total cloud cover for LS2-3",
             "description": "Sunshine hours",
-            "level": "h",
-            "long_name": "day",
+            "label_units": "h",
+            "long_name": "Sunshine hours",
             "notes": [
-                "PP"
+                "Post-process from total cloud cover for LS2-3"
             ],
-            "plot_label": "Sunshine hours",
-            "standard_name": "Sunshine hours (h)",
+            "plot_label": "Sunshine hours (h)",
+            "standard_name": "duration_of_sunshine",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1088,23 +1221,24 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "total"
             ],
-            "um_stash": "PP",
-            "units": "duration_of_sunshine"
+            "time_step": [
+                "day"
+            ],
+            "units": "h"
         },
         "sunAnom": {
-            "cmip6_name": "h",
-            "cmip6_standard_name": "Post-process from total cloud cover for LS2-3",
+            "anomaly_type": "absolute_change",
             "description": "Sunshine hours",
-            "level": "h",
-            "long_name": "day",
+            "label_units": "h",
+            "long_name": "Sunshine hours",
             "notes": [
-                "PP"
+                "Post-process from total cloud cover for LS2-3"
             ],
-            "plot_label": "Sunshine hours",
-            "standard_name": "Sunshine hours anomaly (h)",
+            "plot_label": "Sunshine hours anomaly (h)",
+            "standard_name": "duration_of_sunshine",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1113,55 +1247,58 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "total"
             ],
-            "um_stash": "PP",
-            "units": "duration_of_sunshine"
+            "time_step": [
+                "day"
+            ],
+            "units": "h"
         },
         "swl": {
-            "cmip6_name": "m",
-            "description": "Sea water level",
-            "level": "m",
-            "long_name": "annual",
-            "plot_label": "Mean sea level",
-            "standard_name": "Mean sea level (m)",
+            "description": "Mean sea level",
+            "label_units": "m",
+            "long_name": "Sea water level",
+            "plot_label": "Mean sea level (m)",
             "strand": [
-                "land strand 1",
-                "land strand 2",
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "mean"
             ],
-            "units": "None"
+            "time_step": [
+                "annual"
+            ],
+            "units": "m"
         },
         "swlAnom": {
-            "cmip6_name": "m",
-            "description": "Sea water level",
-            "level": "m",
-            "long_name": "annual",
-            "plot_label": "Mean sea level",
-            "standard_name": "Mean sea level anomaly (m)",
+            "anomaly_type": "absolute_change",
+            "description": "Mean sea level",
+            "label_units": "m",
+            "long_name": "Sea water level",
+            "plot_label": "Mean sea level anomaly (m)",
             "strand": [
-                "land strand 1",
-                "land strand 2",
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "mean"
             ],
-            "units": "None"
+            "time_step": [
+                "annual"
+            ],
+            "units": "m"
         },
         "ta250": {
-            "cmip6_name": "\u00b0c",
-            "description": "Air Temperature",
-            "level": "degC",
-            "long_name": "?",
-            "plot_label": "Air temperature",
-            "standard_name": "Air temperature at 250hPa (\u00b0c)",
+            "cmip6_name": "ta",
+            "cmip6_standard_name": "air_temperature",
+            "description": "Air temperature",
+            "label_units": "°c",
+            "level": "250hPa",
+            "long_name": "Air Temperature",
+            "plot_label": "Air temperature at 250hPa (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1171,20 +1308,23 @@
                 "observations"
             ],
             "time_averaging": [
-                "250hPa"
+                "?"
             ],
             "time_step": [
-                "none"
+                "?"
             ],
-            "units": "air_temperature"
+            "units": "degC"
         },
         "ta250Anom": {
-            "cmip6_name": "\u00b0c",
-            "description": "Air Temperature",
-            "level": "degC",
-            "long_name": "?",
-            "plot_label": "Air temperature",
-            "standard_name": "Air temperature anomaly at 250hPa (\u00b0c)",
+            "anomaly_type": "absolute_change",
+            "cmip6_name": "ta",
+            "cmip6_standard_name": "air_temperature",
+            "description": "Air temperature",
+            "label_units": "°c",
+            "level": "250hPa",
+            "long_name": "Air Temperature",
+            "plot_label": "Air temperature anomaly at 250hPa (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1194,20 +1334,22 @@
                 "observations"
             ],
             "time_averaging": [
-                "250hPa"
+                "?"
             ],
             "time_step": [
-                "absolute_change"
+                "?"
             ],
-            "units": "air_temperature"
+            "units": "degC"
         },
         "ta500": {
-            "cmip6_name": "\u00b0c",
-            "description": "Air Temperature",
-            "level": "degC",
-            "long_name": "?",
-            "plot_label": "Air temperature",
-            "standard_name": "Air temperature at 500hPa (\u00b0c)",
+            "cmip6_name": "ta",
+            "cmip6_standard_name": "air_temperature",
+            "description": "Air temperature",
+            "label_units": "°c",
+            "level": "500hPa",
+            "long_name": "Air Temperature",
+            "plot_label": "Air temperature at 500hPa (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1217,20 +1359,23 @@
                 "observations"
             ],
             "time_averaging": [
-                "500hPa"
+                "?"
             ],
             "time_step": [
-                "none"
+                "?"
             ],
-            "units": "air_temperature"
+            "units": "degC"
         },
         "ta500Anom": {
-            "cmip6_name": "\u00b0c",
-            "description": "Air Temperature",
-            "level": "degC",
-            "long_name": "?",
-            "plot_label": "Air temperature",
-            "standard_name": "Air temperature anomaly at 500hPa (\u00b0c)",
+            "anomaly_type": "absolute_change",
+            "cmip6_name": "ta",
+            "cmip6_standard_name": "air_temperature",
+            "description": "Air temperature",
+            "label_units": "°c",
+            "level": "500hPa",
+            "long_name": "Air Temperature",
+            "plot_label": "Air temperature anomaly at 500hPa (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1240,20 +1385,22 @@
                 "observations"
             ],
             "time_averaging": [
-                "500hPa"
+                "?"
             ],
             "time_step": [
-                "absolute_change"
+                "?"
             ],
-            "units": "air_temperature"
+            "units": "degC"
         },
         "ta850": {
-            "cmip6_name": "\u00b0c",
-            "description": "Air Temperature",
-            "level": "degC",
-            "long_name": "?",
-            "plot_label": "Air temperature",
-            "standard_name": "Air temperature at 850hPa (\u00b0c)",
+            "cmip6_name": "ta",
+            "cmip6_standard_name": "air_temperature",
+            "description": "Air temperature",
+            "label_units": "°c",
+            "level": "850hPa",
+            "long_name": "Air Temperature",
+            "plot_label": "Air temperature at 850hPa (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1263,20 +1410,23 @@
                 "observations"
             ],
             "time_averaging": [
-                "850hPa"
+                "?"
             ],
             "time_step": [
-                "none"
+                "?"
             ],
-            "units": "air_temperature"
+            "units": "degC"
         },
         "ta850Anom": {
-            "cmip6_name": "\u00b0c",
-            "description": "Air Temperature",
-            "level": "degC",
-            "long_name": "?",
-            "plot_label": "Air temperature",
-            "standard_name": "Air temperature anomaly at 850hPa (\u00b0c)",
+            "anomaly_type": "absolute_change",
+            "cmip6_name": "ta",
+            "cmip6_standard_name": "air_temperature",
+            "description": "Air temperature",
+            "label_units": "°c",
+            "level": "850hPa",
+            "long_name": "Air Temperature",
+            "plot_label": "Air temperature anomaly at 850hPa (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1286,27 +1436,30 @@
                 "observations"
             ],
             "time_averaging": [
-                "850hPa"
+                "?"
             ],
             "time_step": [
-                "absolute_change"
+                "?"
             ],
-            "units": "air_temperature"
+            "units": "degC"
         },
         "tas": {
             "cmip6_cmor_tables_row_id": [
-                "03236"
+                "1706",
+                "1710",
+                "1712"
             ],
-            "cmip6_name": "\u00b0c",
+            "cmip6_name": "tas",
+            "cmip6_standard_name": "air_temperature",
             "description": "Mean air temperature",
-            "level": "degC",
-            "long_name": "3hr",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Mean air temperature",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Mean air temperature",
-            "standard_name": "Mean air temperature at 1.5m (\u00b0c)",
+            "plot_label": "Mean air temperature at 1.5m (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1316,28 +1469,36 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "none"
+                "3hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "air_temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tasAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03236"
+                "1706",
+                "1710",
+                "1712"
             ],
-            "cmip6_name": "\u00b0c",
+            "cmip6_name": "tas",
+            "cmip6_standard_name": "air_temperature",
             "description": "Mean air temperature",
-            "level": "degC",
-            "long_name": "3hr",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Mean air temperature",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Mean air temperature",
-            "standard_name": "Mean air temperature anomaly at 1.5m (\u00b0c)",
+            "plot_label": "Mean air temperature anomaly at 1.5m (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1347,28 +1508,34 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "3hr",
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "air_temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tasmax": {
             "cmip6_cmor_tables_row_id": [
-                "03236"
+                "1718",
+                "1719"
             ],
-            "cmip6_name": "\u00b0c",
+            "cmip6_name": "tasmax",
+            "cmip6_standard_name": "air_temperature",
             "description": "Maximum air temperature",
-            "level": "degC",
-            "long_name": "mon",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Maximum air temperature",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Maximum air temperature",
-            "standard_name": "Maximum air temperature at 1.5m (\u00b0c)",
+            "plot_label": "Maximum air temperature at 1.5m (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1378,28 +1545,33 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "max"
             ],
             "time_step": [
-                "none"
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "air_temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tasmaxAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03236"
+                "1718",
+                "1719"
             ],
-            "cmip6_name": "\u00b0c",
+            "cmip6_name": "tasmax",
+            "cmip6_standard_name": "air_temperature",
             "description": "Maximum air temperature",
-            "level": "degC",
-            "long_name": "mon",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Maximum air temperature",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Maximum air temperature",
-            "standard_name": "Maximum air temperature anomaly at 1.5m (\u00b0c)",
+            "plot_label": "Maximum air temperature anomaly at 1.5m (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1409,27 +1581,23 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "max"
             ],
             "time_step": [
-                "absolute_change"
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "air_temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tasmaxHottestDay": {
-            "cmip6_cmor_tables_row_id": [
-                "03236"
-            ],
-            "cmip6_name": "\u00b0c",
             "description": "Maximum air temperature on the hottest day",
-            "level": "degC",
-            "long_name": "annual",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Maximum air temperature on the hottest day",
-            "standard_name": "Maximum air temperature on the hottest day at 1.5m (\u00b0c)",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Maximum air temperature on the hottest day",
+            "plot_label": "Maximum air temperature on the hottest day at 1.5m (°c)",
+            "standard_name": "air temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1439,27 +1607,22 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "mean"
             ],
             "time_step": [
-                "none"
+                "annual"
             ],
-            "um_stash": "PP",
-            "units": "air temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tasmaxHottestDayAnom": {
-            "cmip6_cmor_tables_row_id": [
-                "03236"
-            ],
-            "cmip6_name": "\u00b0c",
+            "anomaly_type": "absolute_change",
             "description": "Maximum air temperature on the hottest day",
-            "level": "degC",
-            "long_name": "annual",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Maximum air temperature on the hottest day",
-            "standard_name": "Maximum air temperature on the hottest day anomaly at 1.5m (\u00b0c)",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Maximum air temperature on the hottest day",
+            "plot_label": "Maximum air temperature on the hottest day anomaly at 1.5m (°c)",
+            "standard_name": "air temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1469,28 +1632,30 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "annual"
             ],
-            "um_stash": "PP",
-            "units": "air temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tasmin": {
             "cmip6_cmor_tables_row_id": [
-                "03236"
+                "1722",
+                "1723"
             ],
-            "cmip6_name": "\u00b0c",
+            "cmip6_name": "tasmin",
+            "cmip6_standard_name": "air_temperature",
             "description": "Minimum air temperature",
-            "level": "degC",
-            "long_name": "mon",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Minimum air temperature",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Minimum air temperature",
-            "standard_name": "Minimum air temperature at 1.5m (\u00b0c)",
+            "plot_label": "Minimum air temperature at 1.5m (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1500,28 +1665,33 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "min"
             ],
             "time_step": [
-                "none"
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "air_temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tasminAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03236"
+                "1722",
+                "1723"
             ],
-            "cmip6_name": "\u00b0c",
+            "cmip6_name": "tasmin",
+            "cmip6_standard_name": "air_temperature",
             "description": "Minimum air temperature",
-            "level": "degC",
-            "long_name": "mon",
+            "label_units": "°c",
+            "level": "1.5m",
+            "long_name": "Minimum air temperature",
             "notes": [
-                "WPS",
-                "Y"
+                "Use WPS for LS1-3"
             ],
-            "plot_label": "Minimum air temperature",
-            "standard_name": "Minimum air temperature anomaly at 1.5m (\u00b0c)",
+            "plot_label": "Minimum air temperature anomaly at 1.5m (°c)",
+            "standard_name": "air_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1531,21 +1701,23 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5m"
+                "LTA",
+                "min"
             ],
             "time_step": [
-                "absolute_change"
+                "day",
+                "mon"
             ],
-            "um_stash": "Y",
-            "units": "air_temperature"
+            "um_stash": "03236",
+            "units": "degC"
         },
         "tideAnom": {
-            "cmip6_name": "m",
-            "description": "Sea surface height above mean sea level due to modelled astronomical tide only'",
-            "level": "m",
-            "long_name": "1hr",
-            "plot_label": "Sea surface elevation (tide)",
-            "standard_name": "Sea surface elevation (tide) anomaly (m)",
+            "anomaly_type": "absolute_change",
+            "cmip6_standard_name": "sea_surface_height_above_mean_sea_level",
+            "description": "Sea surface elevation (tide)",
+            "label_units": "m",
+            "long_name": "Sea surface height above mean sea level due to modelled astronomical tide only'",
+            "plot_label": "Sea surface elevation (tide) anomaly (m)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1555,16 +1727,19 @@
                 "observations"
             ],
             "time_step": [
-                "absolute_change"
-            ]
+                "15min",
+                "1hr",
+                "6min"
+            ],
+            "units": "m"
         },
         "tideSurgeAnom": {
-            "cmip6_name": "m",
-            "description": "Sea surface height above mean sea level due to modelled astronomical tide and meteorological surge",
-            "level": "m",
-            "long_name": "1hr",
-            "plot_label": "Sea surface elevation (tide and surge)",
-            "standard_name": "Sea surface elevation (tide and surge) anomaly (m)",
+            "anomaly_type": "absolute_change",
+            "cmip6_standard_name": "sea_surface_height_above_mean_sea_level",
+            "description": "Sea surface elevation (tide and surge)",
+            "label_units": "m",
+            "long_name": "Sea surface height above mean sea level due to modelled astronomical tide and meteorological surge",
+            "plot_label": "Sea surface elevation (tide and surge) anomaly (m)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1574,16 +1749,17 @@
                 "observations"
             ],
             "time_step": [
-                "absolute_change"
-            ]
+                "15min",
+                "1hr",
+                "6min"
+            ],
+            "units": "m"
         },
         "tpl": {
-            "cmip6_name": "m",
-            "description": "???",
-            "level": "m",
-            "long_name": "use-by date",
-            "plot_label": "Target protection level",
-            "standard_name": "Target protection level (m)",
+            "description": "Target protection level",
+            "label_units": "m",
+            "long_name": "???",
+            "plot_label": "Target protection level (m)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1593,16 +1769,16 @@
                 "observations"
             ],
             "time_step": [
-                "none"
-            ]
+                "use-by date"
+            ],
+            "units": "m"
         },
         "tplAnom": {
-            "cmip6_name": "m",
-            "description": "???",
-            "level": "m",
-            "long_name": "use-by date",
-            "plot_label": "Target protection level",
-            "standard_name": "Target protection level anomaly (m)",
+            "anomaly_type": "absolute_change",
+            "description": "Target protection level",
+            "label_units": "m",
+            "long_name": "???",
+            "plot_label": "Target protection level anomaly (m)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1612,22 +1788,17 @@
                 "observations"
             ],
             "time_step": [
-                "absolute_change"
-            ]
+                "use-by date"
+            ],
+            "units": "m"
         },
         "twb": {
-            "cmip6_cmor_tables_row_id": [
-                "PP"
-            ],
-            "cmip6_name": "\u00b0c",
             "description": "Wet bulb temperature",
-            "level": "degC",
-            "long_name": "6hr",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Wet bulb temperature",
-            "standard_name": "Wet bulb temperature at 1.5 m??? (\u00b0c)",
+            "label_units": "°c",
+            "level": "1.5 m???",
+            "long_name": "Wet bulb temperature",
+            "plot_label": "Wet bulb temperature at 1.5 m??? (°c)",
+            "standard_name": "wet_bulb_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1637,27 +1808,24 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5 m???"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "none"
+                "6hr",
+                "day"
             ],
-            "um_stash": "Y",
-            "units": "wet_bulb_temperature"
+            "um_stash": "PP",
+            "units": "degC"
         },
         "twbAnom": {
-            "cmip6_cmor_tables_row_id": [
-                "PP"
-            ],
-            "cmip6_name": "\u00b0c",
+            "anomaly_type": "absolute_change",
             "description": "Wet bulb temperature",
-            "level": "degC",
-            "long_name": "6hr",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Wet bulb temperature",
-            "standard_name": "Wet bulb temperature anomaly at 1.5 m??? (\u00b0c)",
+            "label_units": "°c",
+            "level": "1.5 m???",
+            "long_name": "Wet bulb temperature",
+            "plot_label": "Wet bulb temperature anomaly at 1.5 m??? (°c)",
+            "standard_name": "wet_bulb_temperature",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1667,28 +1835,29 @@
                 "observations"
             ],
             "time_averaging": [
-                "1.5 m???"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "6hr",
+                "day"
             ],
-            "um_stash": "Y",
-            "units": "wet_bulb_temperature"
+            "um_stash": "PP",
+            "units": "degC"
         },
         "uas": {
             "cmip6_cmor_tables_row_id": [
-                "03225",
-                "30201"
+                "1909",
+                "1914"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Eastward wind component",
-            "level": "m s-1",
-            "long_name": "3hr",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Eastward wind",
-            "standard_name": "Eastward wind at 10m (m s-1)",
+            "cmip6_name": "uas",
+            "cmip6_standard_name": "eastward_wind",
+            "description": "Eastward wind",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Eastward wind component",
+            "plot_label": "Eastward wind at 10m (m s-1)",
+            "standard_name": "eastward_wind",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1698,28 +1867,30 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "none"
+                "3hr",
+                "day"
             ],
-            "um_stash": "Y",
-            "units": "eastward_wind"
+            "um_stash": "30201",
+            "units": "m s-1"
         },
         "uasAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03225",
-                "30201"
+                "1909",
+                "1914"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Eastward wind component",
-            "level": "m s-1",
-            "long_name": "3hr",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Eastward wind",
-            "standard_name": "Eastward wind anomaly at 10m (m s-1)",
+            "cmip6_name": "uas",
+            "cmip6_standard_name": "eastward_wind",
+            "description": "Eastward wind",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Eastward wind component",
+            "plot_label": "Eastward wind anomaly at 10m (m s-1)",
+            "standard_name": "eastward_wind",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1729,28 +1900,29 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "3hr",
+                "day"
             ],
-            "um_stash": "Y",
-            "units": "eastward_wind"
+            "um_stash": "30201",
+            "units": "m s-1"
         },
         "vas": {
             "cmip6_cmor_tables_row_id": [
-                "03226",
-                "30202"
+                "1957",
+                "1962"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Northward wind component",
-            "level": "m s-1",
-            "long_name": "3hr",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Northward wind",
-            "standard_name": "Northward wind at 10m (m s-1)",
+            "cmip6_name": "vas",
+            "cmip6_standard_name": "northward_wind",
+            "description": "Northward wind",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Northward wind component",
+            "plot_label": "Northward wind at 10m (m s-1)",
+            "standard_name": "northward_wind",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1760,28 +1932,30 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "none"
+                "3hr",
+                "day"
             ],
-            "um_stash": "Y",
-            "units": "northward_wind"
+            "um_stash": "30202",
+            "units": "m s-1"
         },
         "vasAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03226",
-                "30202"
+                "1957",
+                "1962"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Northward wind component",
-            "level": "m s-1",
-            "long_name": "3hr",
-            "notes": [
-                "Y"
-            ],
-            "plot_label": "Northward wind",
-            "standard_name": "Northward wind anomaly at 10m (m s-1)",
+            "cmip6_name": "vas",
+            "cmip6_standard_name": "northward_wind",
+            "description": "Northward wind",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Northward wind component",
+            "plot_label": "Northward wind anomaly at 10m (m s-1)",
+            "standard_name": "northward_wind",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1791,27 +1965,21 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "instantaneous",
+                "mean"
             ],
             "time_step": [
-                "absolute_change"
+                "3hr",
+                "day"
             ],
-            "um_stash": "Y",
-            "units": "northward_wind"
+            "um_stash": "30202",
+            "units": "m s-1"
         },
         "wetday": {
-            "cmip6_cmor_tables_row_id": [
-                "16222"
-            ],
-            "cmip6_name": "1",
             "description": "Wettest day",
-            "level": "1",
-            "long_name": "annual",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Wettest day",
-            "standard_name": "Wettest day (1)",
+            "label_units": "1",
+            "long_name": "Wettest day",
+            "plot_label": "Wettest day (1)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1820,22 +1988,20 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "none"
+            "time_averaging": [
+                "total"
             ],
-            "um_stash": "PP"
+            "time_step": [
+                "annual"
+            ],
+            "um_stash": "16222",
+            "units": "1"
         },
         "wetdayAnom": {
-            "cmip6_cmor_tables_row_id": [
-                "16222"
-            ],
+            "anomaly_type": "absolute_change",
             "description": "Wettest day",
-            "long_name": "annual",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Wettest day",
-            "standard_name": "Wettest day anomaly ()",
+            "long_name": "Wettest day",
+            "plot_label": "Wettest day anomaly ()",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1844,21 +2010,20 @@
                 "marine",
                 "observations"
             ],
-            "time_step": [
-                "absolute_change"
+            "time_averaging": [
+                "total"
             ],
-            "um_stash": "PP"
+            "time_step": [
+                "annual"
+            ],
+            "um_stash": "16222"
         },
         "windDir": {
-            "cmip6_name": "degrees",
-            "description": "Direction of wind at 10m",
-            "level": "degrees",
-            "long_name": "day",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Wind direction",
-            "standard_name": "Wind direction at 10m (degrees)",
+            "description": "Wind direction",
+            "label_units": "degrees",
+            "level": "10m",
+            "long_name": "Direction of wind at 10m",
+            "plot_label": "Wind direction at 10m (degrees)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1867,24 +2032,18 @@
                 "marine",
                 "observations"
             ],
-            "time_averaging": [
-                "10m"
-            ],
             "time_step": [
-                "none"
+                "day"
             ],
-            "um_stash": "PP"
+            "units": "degrees"
         },
         "windDirAnom": {
-            "cmip6_name": "degrees",
-            "description": "Direction of wind at 10m",
-            "level": "degrees",
-            "long_name": "day",
-            "notes": [
-                "PP"
-            ],
-            "plot_label": "Wind direction",
-            "standard_name": "Wind direction anomaly at 10m (degrees)",
+            "anomaly_type": "absolute_change",
+            "description": "Wind direction",
+            "label_units": "degrees",
+            "level": "10m",
+            "long_name": "Direction of wind at 10m",
+            "plot_label": "Wind direction anomaly at 10m (degrees)",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1893,24 +2052,23 @@
                 "marine",
                 "observations"
             ],
-            "time_averaging": [
-                "10m"
-            ],
             "time_step": [
-                "absolute_change"
+                "day"
             ],
-            "um_stash": "PP"
+            "units": "degrees"
         },
         "wsgmax10m": {
             "cmip6_cmor_tables_row_id": [
-                "03463"
+                "2037"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Maximum Wind Speed of Gust at 10m",
-            "level": "m s-1",
-            "long_name": "3hr",
-            "plot_label": "Wind gust",
-            "standard_name": "Wind gust at 10m (m s-1)",
+            "cmip6_name": "wsgmax10m",
+            "cmip6_standard_name": "wind_speed_of_gust",
+            "description": "Wind gust",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Maximum Wind Speed of Gust at 10m",
+            "plot_label": "Wind gust at 10m (m s-1)",
+            "standard_name": "wind_speed_of_gust",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1920,24 +2078,27 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "max"
             ],
             "time_step": [
-                "none"
+                "3hr"
             ],
-            "um_stash": "Y",
-            "units": "wind_speed_of_gust"
+            "um_stash": "03463",
+            "units": "m s-1"
         },
         "wsgmax10mAnom": {
+            "anomaly_type": "absolute_change",
             "cmip6_cmor_tables_row_id": [
-                "03463"
+                "2037"
             ],
-            "cmip6_name": "m s-1",
-            "description": "Maximum Wind Speed of Gust at 10m",
-            "level": "m s-1",
-            "long_name": "3hr",
-            "plot_label": "Wind gust",
-            "standard_name": "Wind gust anomaly at 10m (m s-1)",
+            "cmip6_name": "wsgmax10m",
+            "cmip6_standard_name": "wind_speed_of_gust",
+            "description": "Wind gust",
+            "label_units": "m s-1",
+            "level": "10m",
+            "long_name": "Maximum Wind Speed of Gust at 10m",
+            "plot_label": "Wind gust anomaly at 10m (m s-1)",
+            "standard_name": "wind_speed_of_gust",
             "strand": [
                 "land strand 1",
                 "land strand 2",
@@ -1947,13 +2108,13 @@
                 "observations"
             ],
             "time_averaging": [
-                "10m"
+                "max"
             ],
             "time_step": [
-                "absolute_change"
+                "3hr"
             ],
-            "um_stash": "Y",
-            "units": "wind_speed_of_gust"
+            "um_stash": "03463",
+            "units": "m s-1"
         }
     }
 }

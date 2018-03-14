@@ -208,8 +208,8 @@
             "value": "85000.", 
             "bounds_values": ""
         }, 
-		"percentile":{
-		    "standard_name": "", 
+        "percentile":{
+            "standard_name": "", 
             "units": "-", 
             "axis": "", 
             "long_name": "Percentile", 
@@ -256,8 +256,8 @@
             "value": "", 
             "bounds_values": ""
 		},
-		"sample":{
-		    "standard_name": "", 
+        "sample":{
+            "standard_name": "", 
             "units": "-", 
             "axis": "", 
             "long_name": "Sample", 
@@ -272,11 +272,27 @@
             "value": "", 
             "bounds_values": ""
         },
+        "season_year":{
+            "standard_name": "", 
+            "units": "1", 
+            "axis": "", 
+            "long_name": "season_year", 
+            "climatology": "", 
+            "formula": "", 
+            "must_have_bounds": "no", 
+            "positive": "", 
+            "stored_direction": "", 
+            "type": "integer", 
+            "valid_max": "", 
+            "valid_min": "", 
+            "value": "", 
+            "bounds_values": ""
+        },
         "time": {
             "standard_name": "time", 
             "units": "days since 1970-01-01 00:00:00", 
             "axis": "T", 
-			"calendar": "360_day",
+            "calendar": "360_day",
             "long_name": "Time", 
             "climatology": "", 
             "formula": "", 
