@@ -103,3 +103,5 @@ ENV/
 # Packages specifics
 output/*
 src/climate_grid_vocabs/config_tables.xls
+client_secret.json
+
