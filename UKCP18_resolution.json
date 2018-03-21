@@ -1,0 +1,16 @@
+{
+    "resolution": {
+        "60km": "60km",
+        "25km": "25km",
+        "12km": "12km",
+        "2km": "2.2km",
+        "country": "UK Countries", 
+        "region": "Administrative Regions", 
+        "river": "River Basins"
+    },
+    "version_metadata": {
+        "creation_date": "Wed May 17 07:45:06 2017 -0700",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}

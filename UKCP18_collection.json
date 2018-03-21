@@ -1,10 +1,8 @@
 {
     "collection":{
-        "LS1":"Land Strand 1",
-        "LS2":"Land Strand 2",
-        "LS3":"Land Strand 3",
-        "MS":"Marine Strand",
-        "OB":"Observations"
+        "land-prob": "land-prob",
+        "land-gcm": "land-gcm",
+        "marine-sim": "marine-sim"
 	},
     "version_metadata":{
         "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",

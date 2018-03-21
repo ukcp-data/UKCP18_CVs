@@ -45,7 +45,7 @@ def write_ensemble_members():
             'r001i1p02832', 'r001i1p02868', 'r001i1p02884', 'r001i1p02914']
 
     dct = {}
-    name = "ensemble_members"
+    name = "ensemble_member"
 
     for key in data:
         dct[key] = key

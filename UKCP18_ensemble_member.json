@@ -1,5 +1,5 @@
 {
-    "ensemble_members": {
+    "ensemble_member": {
         "r001i1p00000": "r001i1p00000",
         "r001i1p00090": "r001i1p00090",
         "r001i1p00605": "r001i1p00605",
@@ -23,7 +23,7 @@
     },
     "version_metadata": {
         "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
-        "creation_date": "2018-01-24 17:41:04.220491",
+        "creation_date": "2018-03-20 13:59:07.837381",
         "institution_id": "STFC",
         "previous_commit": ""
     }
