@@ -951,6 +951,24 @@
             ],
             "um_stash": "03223"
         },
+        "seaLevelAnom": {
+            "anomaly_type": "absolute_change",
+            "description": "Time-mean sea level anomaly",
+            "label_units": "m",
+            "long_name": "Local time-mean relative sea level anomaly",
+            "plot_label": "Time-mean sea level anomaly (m) ",
+            "strand": [
+                "marine",
+                "observations"
+            ],
+            "time_averaging": [
+                "instantaneous"
+            ],
+            "time_step": [
+                "annual"
+            ],
+            "units": "m"
+        },
         "sfcWind": {
             "cmip6_cmor_tables_row_id": [
                 "1474",
@@ -1031,6 +1049,23 @@
                 "mon"
             ],
             "units": "m s-1"
+        },
+        "skewSurgeTrend\n": {
+            "anomaly_type": "N/A",
+            "description": "21st century Trend in extreme still water level due to storminess change alone",
+            "label_units": "my-1",
+            "long_name": "21st century Trend in extreme still water level due to storminess change alone\n",
+            "plot_label": "",
+            "strand": [
+                "observations"
+            ],
+            "time_averaging": [
+                "average rate over 2007-2099"
+            ],
+            "time_step": [
+                "N/A"
+            ],
+            "units": "m y-1"
         },
         "snd": {
             "cmip6_cmor_tables_row_id": [

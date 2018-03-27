@@ -4,3 +4,5 @@
 pandas
 simplejson
 numpy
+# For writing variables from Google spreadsheet
+google-api-python-client
