@@ -79,10 +79,12 @@ def make_dict_from_sheet(spreadsheet):
     for row in spreadsheet:
         if len(row) < 2:
             continue
-        if row[id_column] in data.keys():
-            data[row[id_column]].append(row)
+        
+        key = row[id_column].strip()
+        if key in data.keys():
+            data[key].append(row)
         else:
-            data[row[id_column]] = [row]
+            data[key] = [row]
     return data
 
 
@@ -122,6 +124,8 @@ def process_data(data):
     col_cmip6_cmor_tables_row_id = 22
 
     for row in data:
+        row = [item.strip() for item in row]
+
         if variable == {}:
             # these fields are common to all the rows for a variable
             variable['long_name'] = row[col_long_name]
@@ -206,11 +210,14 @@ def main():
 
     output = {'variable': variables}
 
-    with io.open('../UKCP18_variable.json', 'w', encoding='utf8') as json_file:
+    variable_json = '../UKCP18_variable.json'
+    with io.open(variable_json, 'w', encoding='utf8') as json_file:
         data = json.dumps(output, sort_keys=True, indent=4,
                           separators=(',', ': '), ensure_ascii=False,
                           encoding='utf8')
         json_file.write(unicode(data))
+
+    print('Wrote new version of: {}'.format(variable_json))
 
 
 if __name__ == '__main__':
