@@ -1750,7 +1750,7 @@
             "cmip6_standard_name": "sea_surface_height_above_mean_sea_level",
             "description": "Sea surface elevation (tide)",
             "label_units": "m",
-            "long_name": "Sea surface height above mean sea level due to modelled astronomical tide only'",
+            "long_name": "Sea surface height above mean sea level due to modelled astronomical tide only",
             "plot_label": "Sea surface elevation (tide) anomaly (m)",
             "strand": [
                 "land strand 1",
