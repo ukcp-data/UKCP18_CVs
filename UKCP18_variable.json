@@ -1826,6 +1826,17 @@
             ],
             "units": "m"
         },
+        "transverse_mercator": {
+            "false_easting": 400000.0,
+            "false_northing": -100000.0,
+            "grid_mapping_name": "transverse_mercator",
+            "latitude_of_projection_origin": 49.0,
+            "longitude_of_central_meridian": -2.0,
+            "longitude_of_prime_meridian": 0.0,
+            "scale_factor_at_central_meridian": 0.9996012717,
+            "semi_major_axis": 6377563.396,
+            "semi_minor_axis": 6356256.909
+        },
         "twb": {
             "description": "Wet bulb temperature",
             "label_units": "°c",

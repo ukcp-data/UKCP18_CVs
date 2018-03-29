@@ -208,6 +208,8 @@ def main():
     for key in data.keys():
         variables[key] = process_data(data[key])
 
+    _add_special_variables(variables)
+
     output = {'variable': variables}
 
     variable_json = '../UKCP18_variable.json'
@@ -218,6 +220,38 @@ def main():
         json_file.write(unicode(data))
 
     print('Wrote new version of: {}'.format(variable_json))
+
+
+def _add_special_variables(variables):
+    """
+    Adds in special variables defined with non-standard attributes.
+
+    :param variables: dictionary.
+    :return: None
+    """
+    """
+        int transverse_mercator ;
+grid_mapping_name = "transverse_mercator" ;
+longitude_of_prime_meridian = 0. ;
+semi_major_axis = 6377563.396 ;
+semi_minor_axis = 6356256.909 ;
+longitude_of_central_meridian = -2. ;
+latitude_of_projection_origin = 49. ;
+false_easting = 400000. ;
+false_northing = -100000. ;
+scale_factor_at_central_meridian = 0.9996012717 ;
+    """
+    tv = {"grid_mapping_name": "transverse_mercator",
+        "longitude_of_prime_meridian": 0.,
+        "semi_major_axis": 6377563.396, 
+        "semi_minor_axis": 6356256.909,
+        "longitude_of_central_meridian": -2.,
+        "latitude_of_projection_origin": 49.,
+        "false_easting": 400000.,
+        "false_northing": -100000., 
+        "scale_factor_at_central_meridian": 0.9996012717, 
+    }
+    variables['transverse_mercator'] = tv
 
 
 if __name__ == '__main__':
