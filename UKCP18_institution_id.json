@@ -1,13 +1,13 @@
 {
-    "institution_id":{
-        "CEDA":"Centre for Environmental Data Analysis, Rutherford Appleton Laboratory, Harwell Campus, Didcot OX11 0QX",
-        "MOHC":"Met Office Hadley Centre, FitzRoy Road, Exeter, Devon, EX1 3PB, UK",
-        "STFC":"Science and Technology Facilities Council, Rutherford Appleton Laboratory, Harwell Campus, Didcot OX11 0QX"
+    "institution_id": {
+        "CEDA": "Centre for Environmental Data Analysis, Rutherford Appleton Laboratory, Harwell Campus, Didcot OX11 0QX",
+        "MOHC": "Met Office Hadley Centre, FitzRoy Road, Exeter, Devon, EX1 3PB, UK",
+        "STFC": "Science and Technology Facilities Council, Rutherford Appleton Laboratory, Harwell Campus, Didcot OX11 0QX"
     },
-    "version_metadata":{
-        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
-        "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
-        "institution_id":"STFC",
-        "previous_commit":"204fc62b5c2ec2c127c20bf8b8bf7409b40ed623"
+    "version_metadata": {
+        "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date": "Tue Jun 06 07:45:06 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": "204fc62b5c2ec2c127c20bf8b8bf7409b40ed623"
     }
 }

@@ -1,11 +1,11 @@
 {
     "resolution": {
-        "60km": "60km",
-        "25km": "25km",
         "12km": "12km",
+        "25km": "25km",
         "2km": "2.2km",
-        "country": "UK Countries", 
-        "region": "Administrative Regions", 
+        "60km": "60km",
+        "country": "UK Countries",
+        "region": "Administrative Regions",
         "river": "River Basins"
     },
     "version_metadata": {

@@ -1,16 +1,16 @@
 {
-    "marine_input_model":{
+    "marine_input_model": {
+        "CNRM-CM5": "CNRM-CM5",
         "EC-EARTH": "EC-EARTH",
         "HadGEM2-ES": "HadGEM2-ES",
-        "MPI-ESM-LR": "MPI-ESM-LR",
-        "CNRM-CM5": "CNRM-CM5",
-        "IPSL-CM5A-MR": "IPSL-CM5A-MR"
-	},
-    "version_metadata":{
-        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
-        "creation_date":"Tue Jun 06 07:45:06 2017 -0100",
-        "update_date":"Thu Oct 12 13:00:00 2017 -0100",
-        "institution_id":"STFC",
-        "previous_commit":""
+        "IPSL-CM5A-MR": "IPSL-CM5A-MR",
+        "MPI-ESM-LR": "MPI-ESM-LR"
+    },
+    "version_metadata": {
+        "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date": "Tue Jun 06 07:45:06 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": "",
+        "update_date": "Thu Oct 12 13:00:00 2017 -0100"
     }
 }

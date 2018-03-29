@@ -1,10 +1,10 @@
 {
-    "license":[
+    "license": [
         "ADD LICENSE TEXT HERE"
     ],
-    "version_metadata":{
-        "author":"Ag Stephens <ag.stephens@stfc.ac.uk>",
-        "creation_date":"Thu Sep 07 12:32:02",
-        "institution_id":"STFC"
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Thu Sep 07 12:32:02",
+        "institution_id": "STFC"
     }
 }

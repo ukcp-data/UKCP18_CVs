@@ -1,27 +1,27 @@
 {
-    "admin_region":{
-		"north_east_england": "North East England",
-		"north_west_england": "North West England",
-		"yorkshire_and_humber": "Yorkshire and Humber",
-		"east_midlands": "East Midlands",
-		"west_midlands": "West Midlands",
-		"east_of_england": "East of England",
-		"london": "London",
-		"south_east_england": "South East England",
-		"south_west_england": "South West England",
-		"wales": "Wales",
-		"east_scotland": "East Scotland",
-		"west_scotland": "West Scotland",
-		"north_scotland": "North Scotland",
-		"northern_ireland": "Northern Ireland",
-		"channel_islands": "Channel Islands",
-		"isle_of_man": "Isle of Man"
-	},
-    "version_metadata":{
-        "author":"Antony Wilson <antony.wilson@stfc.ac.uk>",
-        "creation_date":"Wed Oct 11 12:00:00 2017 -0100",
-        "update_date":"Thu Oct 12 13:00:00 2017 -0100",
-        "institution_id":"STFC",
-        "previous_commit":""
+    "admin_region": {
+        "channel_islands": "Channel Islands",
+        "east_midlands": "East Midlands",
+        "east_of_england": "East of England",
+        "east_scotland": "East Scotland",
+        "isle_of_man": "Isle of Man",
+        "london": "London",
+        "north_east_england": "North East England",
+        "north_scotland": "North Scotland",
+        "north_west_england": "North West England",
+        "northern_ireland": "Northern Ireland",
+        "south_east_england": "South East England",
+        "south_west_england": "South West England",
+        "wales": "Wales",
+        "west_midlands": "West Midlands",
+        "west_scotland": "West Scotland",
+        "yorkshire_and_humber": "Yorkshire and Humber"
+    },
+    "version_metadata": {
+        "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date": "Wed Oct 11 12:00:00 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": "",
+        "update_date": "Thu Oct 12 13:00:00 2017 -0100"
     }
 }

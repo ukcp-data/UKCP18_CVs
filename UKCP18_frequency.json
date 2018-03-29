@@ -1,27 +1,27 @@
 {
-    "frequency":{
-        "1hr":"sampled hourly",
-        "1hrClimMon":"monthly climatology of diurnal cycle computed from hourly samples",
-        "3hr":"sampled every 3 hours",
-        "3hrMean":"Mean over 3 hours",
-        "6hr":"sampled every 6 hours",
-        "6hrMean":"Mean over 6 hours",
-        "ann":"annual mean",
-        "day":"daily mean samples",
-        "dec":"decadal mean samples",
-        "fx":"fixed (time invariant) field",
-        "mon":"monthly mean",
-        "monClim":"monthly climatology computed from monthly mean samples",
-        "seas":"seasonal mean",
-        "subhr":"sampled sub-hourly",
-        "yr":"annual mean samples"
+    "frequency": {
+        "1hr": "sampled hourly",
+        "1hrClimMon": "monthly climatology of diurnal cycle computed from hourly samples",
+        "3hr": "sampled every 3 hours",
+        "3hrMean": "Mean over 3 hours",
+        "6hr": "sampled every 6 hours",
+        "6hrMean": "Mean over 6 hours",
+        "ann": "annual mean",
+        "day": "daily mean samples",
+        "dec": "decadal mean samples",
+        "fx": "fixed (time invariant) field",
+        "mon": "monthly mean",
+        "monClim": "monthly climatology computed from monthly mean samples",
+        "seas": "seasonal mean",
+        "subhr": "sampled sub-hourly",
+        "yr": "annual mean samples"
     },
-    "version_metadata":{
-        "author":"Paul J. Durack <durack1@llnl.gov>",
-        "creation_date":"Wed Jul 12 06:21:33 2017 -0700",
-        "institution_id":"PCMDI",
-        "latest_tag_point":"3.2.4 (31; gfed5bf2)",
-        "note":"Revise multiple MOHC source_id values",
-        "previous_commit":"51e8c42f6cf1beb142558068cab66576deb21c3b"
+    "version_metadata": {
+        "author": "Paul J. Durack <durack1@llnl.gov>",
+        "creation_date": "Wed Jul 12 06:21:33 2017 -0700",
+        "institution_id": "PCMDI",
+        "latest_tag_point": "3.2.4 (31; gfed5bf2)",
+        "note": "Revise multiple MOHC source_id values",
+        "previous_commit": "51e8c42f6cf1beb142558068cab66576deb21c3b"
     }
 }

@@ -1,14 +1,14 @@
 {
-    "activity_id":[
+    "activity_id": [
         "UKCP09",
         "UKCP18"
     ],
-    "version_metadata":{
-        "author":"Ag Stephens <ag.stephens@stfc.ac.uk>",
-        "creation_date":"2017-08-30",
-        "institution_id":"CEDA",
-        "latest_tag_point":"",
-        "note":"",
-        "previous_commit":""
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "2017-08-30",
+        "institution_id": "CEDA",
+        "latest_tag_point": "",
+        "note": "",
+        "previous_commit": ""
     }
 }
