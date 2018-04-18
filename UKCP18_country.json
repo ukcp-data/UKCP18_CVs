@@ -2,9 +2,9 @@
     "country": {
         "channel_islands": "Channel Islands",
         "england": "England",
+        "england_and_wales": "England and Wales",
         "ireland": "Republic of Ireland",
         "isle_of_man": "Isle of Man",
-        "northern_ireland": "Northern Ireland",
         "scotland": "Scotland",
         "uk": "United Kingdom",
         "wales": "Wales"

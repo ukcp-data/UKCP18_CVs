@@ -2,12 +2,10 @@
     "river_basin": {
         "anglian": "Anglian",
         "argyll": "Argyll",
-        "channel_islands": "Channel Islands",
         "clyde": "Clyde",
         "dee": "Dee",
         "forth": "Forth",
         "humber": "Humber",
-        "isle_of_man": "Isle of Man",
         "neagh_bann": "Neagh Bann",
         "north_east_scotland": "North East Scotland",
         "north_eastern_ireland": "North Eastern Ireland",
@@ -16,7 +14,6 @@
         "north_western_ireland": "North Western Ireland",
         "northumbria": "Northumbria",
         "orkney_and_shetlands": "Orkney and Shetlands",
-        "republic_of_ireland": "Republic of Ireland",
         "severn": "Severn",
         "solway": "Solway",
         "south_east_england": "South East England",
@@ -25,7 +22,7 @@
         "thames": "Thames",
         "tweed": "Tweed",
         "west_highland": "West Highland",
-        "west_wales": "West Wales"
+        "western_wales": "Western Wales"
     },
     "version_metadata": {
         "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
