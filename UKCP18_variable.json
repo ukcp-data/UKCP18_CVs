@@ -953,10 +953,10 @@
         },
         "seaLevelAnom": {
             "anomaly_type": "absolute_change",
-            "description": "Time-mean sea level anomaly",
+            "description": "Time-mean sea level",
             "label_units": "m",
             "long_name": "Local time-mean relative sea level anomaly",
-            "plot_label": "Time-mean sea level anomaly anomaly (m)",
+            "plot_label": "Time-mean sea level anomaly (m)",
             "strand": [
                 "marine",
                 "observations"
