@@ -32,18 +32,20 @@ source venv/bin/activate
 
 ```
 git clone https://github.com/ukcp-data/UKCP18_CVs
-pip install pyessv
+pip install "pyessv==0.4.5.0"
 ```
 
 ### 3. Clone the "writer" repository 
 
-The `pyessv-writer` repository includes a script to cache the JSON vocabularies in the `UKCP18_CVs` repository on to the local file system (under `~/.esdoc/pyessv-archive/`). Clone it and run the script:
+The `pyessv-writers` repository includes a script to cache the JSON vocabularies 
+in the `UKCP18_CVs` repository on to the local file system 
+(under `~/.esdoc/pyessv-archive/`). Clone it and run the script:
 
 ```
-git clone https://github.com/ukcp-data/pyessv-writer
-cd pyessv-writer/
-mkdir  -p ~/.esdoc/pyessv-archive
-python sh/write_ukcp18_cvs.py --source=../UKCP18_CVs
+git clone https://github.com/agstephens/pyessv-writers
+cd pyessv-writers/
+mkdir -p ~/.esdoc/pyessv-archive
+python src/write_ukcp18_cvs.py --source=../UKCP18_CVs
 ```
 
 ### 4. Test that it works - using the pyessv library
@@ -55,23 +57,24 @@ Python 2.7.3 (default, Feb 21 2014, 13:11:38)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import pyessv
 2017-07-13T07:41:27.655177 [INFO] :: ES-DOC PYESSV :: Loading vocabularies from /home/users/astephen/.esdoc/pyessv-archive:
-/home/users/astephen/.esdoc/pyessv-archive/ukcp
-
-insts = pyessv.load('ukcp', 'ukcp18', 'institution-id')
+/home/users/whoami/.esdoc/pyessv-archive/ukcp
 
 2017-07-13T07:41:35.733418 [INFO] :: ES-DOC PYESSV :: ... loaded: ukcp
->>> insts = pyessv.load('ukcp', 'ukcp18', 'institution-id')
-
+>>> import pyessv
+>>> vocabs = pyessv.load('ukcp:ukcp18')
+>>> insts = vocabs['institution-id']
 >>> for i in insts: print i
 ...
 ukcp:ukcp18:institution-id:ceda
 ukcp:ukcp18:institution-id:mohc
 ukcp:ukcp18:institution-id:stfc
+
 ```
 
 ## 5. Future usage (after the initial install)
 
-Once you have run the above code, you only need to do the following to set up your environment each time you want to work with the vocabularies:
+Once you have run the above code, you only need to do the following to set up 
+your environment each time you want to work with the vocabularies:
 
 ```
 cd vocabs/
@@ -84,7 +87,7 @@ source venv/bin/activate
 
 See examples at:
 
-https://github.com/ES-DOC/pyessv/blob/master/notebooks/pyessv-and-cmip6.ipynb
+ https://github.com/ES-DOC/pyessv/blob/master/notebooks/pyessv-and-cmip6.ipynb
 
 ## Doing the entire install in a script
 
@@ -113,10 +116,10 @@ pip install --upgrade pip
 git clone https://github.com/ukcp-data/UKCP18_CVs
 pip install pyessv
 
-git clone https://github.com/ukcp-data/pyessv-writer
-cd pyessv-writer/
+git clone https://github.com/agstephens/pyessv-writers
+cd pyessv-writers/
 mkdir  -p ~/.esdoc/pyessv-archive
-python sh/write_ukcp18_cvs.py --source=../UKCP18_CVs
+python src/write_ukcp18_cvs.py --source=../UKCP18_CVs
 ```
 
 Test it with:
@@ -127,6 +130,7 @@ source venv/bin/activate
 python
 
 >>> import pyessv
->>> insts = pyessv.load('ukcp', 'ukcp18', 'institution-id')
+>>> vocabs = pyessv.load('ukcp:ukcp18')
+>>> insts = vocabs['institution-id']
 >>> for i in insts: print i
 ```
