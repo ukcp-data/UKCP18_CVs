@@ -34,7 +34,7 @@
             "units": "%"
         },
         "cltAnom": {
-            "anomaly_type": "absolute_change",
+            "anomaly_type": "percentage_change",
             "cmip6_cmor_tables_row_id": [
                 "206",
                 "209"
@@ -324,7 +324,7 @@
             "units": "%"
         },
         "hursAnom": {
-            "anomaly_type": "absolute_change",
+            "anomaly_type": "percentage_change",
             "cmip6_cmor_tables_row_id": [
                 "678",
                 "679",
@@ -398,7 +398,7 @@
             "units": "1"
         },
         "hussAnom": {
-            "anomaly_type": "absolute_change",
+            "anomaly_type": "percentage_change",
             "cmip6_cmor_tables_row_id": [
                 "704",
                 "705",
@@ -549,7 +549,7 @@
             "units": "mm/day"
         },
         "prAnom": {
-            "anomaly_type": "absolute_change",
+            "anomaly_type": "percentage_change",
             "cmip6_cmor_tables_row_id": [
                 "1164",
                 "1166",
