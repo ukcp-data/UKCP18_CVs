@@ -1,7 +1,8 @@
 {
     "domain": {
         "global": "Global",
-        "uk": "UK"
+        "uk": "UK",
+        "eur": "European"
     },
     "version_metadata": {
         "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
