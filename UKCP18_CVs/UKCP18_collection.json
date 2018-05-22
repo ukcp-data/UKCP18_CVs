@@ -2,6 +2,7 @@
     "collection": {
         "land-gcm": "land-gcm",
         "land-prob": "land-prob",
+        "land-rcm": "land-rcm",
         "marine-sim": "marine-sim"
     },
     "version_metadata": {
