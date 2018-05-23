@@ -1,9 +1,9 @@
 {
     "collection": {
-        "land-gcm": "land-gcm",
-        "land-prob": "land-prob",
-        "land-rcm": "land-rcm",
-        "marine-sim": "marine-sim"
+        "land-gcm": "Global simulations",
+        "land-prob": "Land probabilistic projections",
+        "land-rcm": "Regional simulations",
+        "marine-sim": "Marine simulations"
     },
     "version_metadata": {
         "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
