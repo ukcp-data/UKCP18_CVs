@@ -1,0 +1,12 @@
+{
+    "climate_change_type": {
+        "absolute": "Anomaly values",
+        "anomaly": "Absolute values"
+    },
+    "version_metadata": {
+        "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
+        "creation_date": "Wed May 23 07:45:06 2018 -0100",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}
