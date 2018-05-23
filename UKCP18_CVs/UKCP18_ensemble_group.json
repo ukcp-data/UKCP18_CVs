@@ -1,6 +1,6 @@
 {
     "ensemble_group": {
-        "land-gcm": {
+        "land-gcm": [
             "01",
             "02",
             "03",
@@ -29,8 +29,8 @@
             "26",
             "27",
             "28"
-        },
-        "land-rcm": {
+        ],
+        "land-rcm": [
             "01",
             "04",
             "05",
@@ -43,7 +43,7 @@
             "12",
             "13",
             "15"
-        },
+        ],
     },
     "version_metadata": {
         "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
