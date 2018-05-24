@@ -212,7 +212,7 @@ def main():
 
     output = {'variable': variables}
 
-    variable_json = '../UKCP18_variable.json'
+    variable_json = '../UKCP18_CVs/UKCP18_variable.json'
     with io.open(variable_json, 'w', encoding='utf8') as json_file:
         data = json.dumps(output, sort_keys=True, indent=4,
                           separators=(',', ': '), ensure_ascii=False,
