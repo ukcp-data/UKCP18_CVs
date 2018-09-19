@@ -3,11 +3,12 @@
         "land-gcm": "Global simulations",
         "land-prob": "Land probabilistic projections",
         "land-rcm": "Regional simulations",
-        "marine-sim": "Marine simulations"
+        "marine-sim": "Marine simulations",
+        "land-obs": "Land observations"
     },
     "version_metadata": {
-        "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
-        "creation_date": "Tue Jun 06 07:45:06 2017 -0100",
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Wed Sep 19 13:42:06 2018",
         "institution_id": "STFC",
         "previous_commit": ""
     }
