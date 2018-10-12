@@ -1,0 +1,12 @@
+{
+    "time_slice_type": {
+        "1y": "1-year time slices",
+        "30y": "30-year time slices"
+    },
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Fri Oct 12 16:45:06 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "baseline_period": {
+        "b6190": "1961-1990",
+        "b8100": "1981-2000",
+        "b8110": "1981-2010"
+    },
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Fri Oct 12 16:45:06 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}
