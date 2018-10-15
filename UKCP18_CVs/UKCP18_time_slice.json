@@ -1,0 +1,17 @@
+{
+    "time_slice": {
+        "2010-2039": "2020s",
+        "2020-2049": "2030s",
+        "2030-2059": "2040s",
+        "2040-2069": "2050s",
+        "2050-2079": "2060s",
+        "2060-2089": "2070s",
+        "2070-2099": "2080s"
+    },
+    "version_metadata": {
+        "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
+        "creation_date": "Fri Oct 12 16:45:06 2017 -0100",
+        "institution_id": "STFC",
+        "previous_commit": ""
+    }
+}
