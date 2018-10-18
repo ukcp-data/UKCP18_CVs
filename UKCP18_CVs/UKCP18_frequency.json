@@ -4,10 +4,13 @@
         "3hr": "3-hourly",
         "6hr": "6-hourly",
         "ann": "Annual",
+        "ann-clim": "Annual climatology",
         "day": "Daily",
         "fx": "Fixed (time invariant) field",
         "mon": "Monthly",
+        "mon-clim": "Monthly climatology",
         "seas": "Seasonal",
+        "seas-clim": "Seasonal climatology",
         "subhr": "Sub-hourly"
     },
     "version_metadata": {
