@@ -1,6 +1,7 @@
 {
     "time_slice_type": {
         "1y": "1-year time slices",
+        "20y": "20-year time slices",
         "30y": "30-year time slices"
     },
     "version_metadata": {
