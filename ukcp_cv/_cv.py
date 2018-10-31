@@ -8,27 +8,28 @@ def enum(**named_values):
 
 CV_Type = enum(ACTIVITY_ID='activity_id',
                ADMIN_REGION='admin_region',
+               BASELINE_PERIOD='baseline_period',
+               CLIMATE_CHANGE_TYPE='climate_change_type',
                COLLECTION='collection',
                COORDINATE='coordinate',
                COUNTRY='country',
-               DATASET_ID='dataset_id',
                DOMAIN='domain',
+               ENSEMBLE_GROUP='ensemble_group',
                ENSEMBLE_MEMBER='ensemble_member',
                EXPERIMENT_ID='experiment_id',
                FREQUENCY='frequency',
                INSTITUTION_ID='institution_id',
                LICENSE='license',
                MARINE_INPUT_MODEL='marine_input_model',
-               OBS_GEAGRAPHIC_CRS='obs_geographic_crs',
-               OBS_GRID_PROPERTIES='obs_grid_properties',
-               OBS_PROJECTED_CRS='obs_projected_crs',
-               OBS_VARIABLES='obs_variables',
                PROB_DATA_TYPE='prob_data_type',
                PROJECT='project',
                PROJECTION='projection',
                RESOLUTION='resolution',
                RIVER_BASIN='river_basin',
                SCENARIO='scenario',
+               TIME_SLICE_20y='time_slice_20y',
+               TIME_SLICE_30y='time_slice_30y',
+               TIME_SLICE_TYPE='time_slice_type',
                VARIABLE='variable',
                )
 
@@ -66,4 +67,7 @@ if __name__ == '__main__':
             print key
             print get_cv(CV_Type.__dict__[key])
 
-    print get_cv('junk')
+    try:
+        print get_cv('junk')
+    except ValueError:
+        pass    
