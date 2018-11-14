@@ -1,5 +1,6 @@
 {
     "collection": {
+        "land-derived": "Derived projections",
         "land-gcm": "Global simulations",
         "land-prob": "Land probabilistic projections",
         "land-rcm": "Regional simulations",
@@ -8,7 +9,7 @@
     },
     "version_metadata": {
         "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
-        "creation_date": "Wed Sep 19 13:42:06 2018",
+        "creation_date": "14/11/2018 17:30",
         "institution_id": "STFC",
         "previous_commit": ""
     }
