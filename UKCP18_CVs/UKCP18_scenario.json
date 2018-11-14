@@ -4,11 +4,13 @@
         "rcp45": "RCP 4.5",
         "rcp60": "RCP 6.0",
         "rcp85": "RCP 8.5",
-        "sres-a1b": "SRES A1B"
+        "sres-a1b": "SRES A1B",
+        "gwl2": "Global warming level of 2°C",
+        "gwl4": "Global warming level of 4°C"
     },
     "version_metadata": {
         "author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
-        "creation_date": "Wed May 17 07:45:06 2017 -0700",
+        "creation_date": "14/11/2018 17:41",
         "institution_id": "STFC",
         "previous_commit": ""
     }
