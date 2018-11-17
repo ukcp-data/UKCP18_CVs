@@ -1,4 +1,5 @@
 import json
+import site
 from os import path
 
 
@@ -44,11 +45,14 @@ def get_cv(cv_type):
     """
     if not _is_cv_type(cv_type):
         raise ValueError('Invalid CV_Type: {}'.format(cv_type))
-    base_path = path.abspath(path.dirname(__file__))
+
+    base_path = path.join(site.USER_SITE, 'UKCP18_CVs')
     file_name = 'UKCP18_{}.json'.format(cv_type)
-    cv_file = path.join(base_path, '../UKCP18_CVs', file_name)
+
+    cv_file = path.join(base_path, file_name)
     with open(cv_file) as json_data:
         cvs = json.load(json_data)
+
     return cvs
 
 
