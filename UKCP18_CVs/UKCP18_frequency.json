@@ -4,18 +4,21 @@
         "3hr": "3-hourly",
         "6hr": "6-hourly",
         "ann": "Annual",
-        "ann-clim": "Annual climatology",
+        "ann-20y": "20-year average of annual data",
+        "ann-30y": "30-year average of annual data",
         "day": "Daily",
         "fx": "Fixed (time invariant) field",
         "mon": "Monthly",
-        "mon-clim": "Monthly climatology",
+        "mon-20y": "20-year average of monthly data",
+        "mon-30y": "30-year average of monthly data",
         "seas": "Seasonal",
-        "seas-clim": "Seasonal climatology",
+        "seas-20y": "20-year average of seasonal data",
+        "seas-30y": "30-year average of seasonal data",
         "subhr": "Sub-hourly"
     },
     "version_metadata": {
         "author": "Ag Stephens <ag.stephens@stfc.ac.uk>",
-        "creation_date": "Wed 23/05/2018",
+        "creation_date": "Thu 29/11/2018",
         "institution_id": "STFC CEDA",
         "previous_commit": ""
     }
