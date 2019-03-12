@@ -51,7 +51,6 @@ setup(
             'UKCP18_CVs/UKCP18_domain.json',
             'UKCP18_CVs/UKCP18_ensemble_group.json',
             'UKCP18_CVs/UKCP18_ensemble_member.json',
-            'UKCP18_CVs/UKCP18_experiment_id.json',
             'UKCP18_CVs/UKCP18_frequency.json',
             'UKCP18_CVs/UKCP18_institution_id.json',
             'UKCP18_CVs/UKCP18_license.json',
