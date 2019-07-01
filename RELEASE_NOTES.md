@@ -1,3 +1,9 @@
+# Release 1.0.3
+
+This release includes:
+* Update to the river basins, 'Orkney and Shetlands' -> 'Orkney and Shetland'
+
+
 # Release 1.0.2
 
 This release includes:
