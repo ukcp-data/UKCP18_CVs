@@ -1,6 +1,6 @@
 {
     "collection": {
-        "land-cpm": "Hi-res simulations",
+        "land-cpm": "Local simulations",
         "land-derived": "Derived projections",
         "land-gcm": "Global simulations",
         "land-prob": "Land probabilistic projections",
