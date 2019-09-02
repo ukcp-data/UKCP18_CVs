@@ -207,32 +207,6 @@
             "um_stash": "03248",
             "units": "1"
         },
-        "gusts": {
-            "cmip6_name": "wsgmax10m",
-            "cmip6_standard_name": "wind_speed_of_gust",
-            "description": "Wind speed gust maximum at 10m",
-            "label_units": "m s-1",
-            "level": "10m",
-            "long_name": "Maximum Wind Speed of Gust at 10m",
-            "plot_label": "Wind speed gust maximum (m s-1)",
-            "standard_name": "wind_speed_of_gust",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
-            "time_averaging": [
-                "max"
-            ],
-            "time_step": [
-                "day"
-            ],
-            "um_stash": "3463",
-            "units": "m s-1"
-        },
         "hail": {
             "description": "Hail (Graupel)",
             "label_units": "1",
@@ -585,6 +559,23 @@
             ],
             "um_stash": "05216",
             "units": "%"
+        },
+        "prsn": {
+            "description": "Snowfall flux at surface",
+            "label_units": "mm/day",
+            "long_name": "Snowfall Flux",
+            "plot_label": "Snowfall Flux (mm/day)",
+            "standard_name": "snowfall_flux",
+            "strand": [
+                "land strand 3 2km"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "units": "mm/day"
         },
         "psl": {
             "cmip6_cmor_tables_row_id": [
@@ -1173,54 +1164,20 @@
             "um_stash": "00376",
             "units": "mm"
         },
-        "snowLying": {
-            "description": "Snow lying",
+        "snw": {
+            "description": "Amount of snow on the ground",
             "label_units": "mm",
-            "long_name": "Depth of snow lying on the ground",
-            "notes": [
-                "Availability TBC"
-            ],
-            "plot_label": "Snow lying (mm)",
-            "standard_name": "surface_snow_binary_mask",
+            "long_name": "Surface Snow Amount",
+            "plot_label": "Surface snow amount (mm)",
+            "standard_name": "surface_snow_amount",
             "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
+                "land strand 3 2km"
             ],
             "time_averaging": [
-                "LTA"
+                "mean"
             ],
             "time_step": [
-                "mon"
-            ],
-            "units": "mm"
-        },
-        "snowLyingAnom": {
-            "anomaly_type": "absolute_change",
-            "description": "Snow lying",
-            "label_units": "mm",
-            "long_name": "Depth of snow lying on the ground",
-            "notes": [
-                "Availability TBC"
-            ],
-            "plot_label": "Snow lying anomaly (mm)",
-            "standard_name": "surface_snow_binary_mask",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
-            "time_averaging": [
-                "LTA"
-            ],
-            "time_step": [
-                "mon"
+                "day"
             ],
             "units": "mm"
         },
@@ -2209,25 +2166,20 @@
             ],
             "cmip6_name": "wsgmax10m",
             "cmip6_standard_name": "wind_speed_of_gust",
-            "description": "Wind gust",
+            "description": "Wind speed gust maximum at 10m",
             "label_units": "m s-1",
             "level": "10m",
             "long_name": "Maximum Wind Speed of Gust at 10m",
-            "plot_label": "Wind gust at 10m (m s-1)",
+            "plot_label": "Wind speed gust maximum (m s-1)",
             "standard_name": "wind_speed_of_gust",
             "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
+                "land strand 3 2km"
             ],
             "time_averaging": [
                 "max"
             ],
             "time_step": [
-                "3hr"
+                "day"
             ],
             "um_stash": "03463",
             "units": "m s-1"
@@ -2239,25 +2191,20 @@
             ],
             "cmip6_name": "wsgmax10m",
             "cmip6_standard_name": "wind_speed_of_gust",
-            "description": "Wind gust",
+            "description": "Wind speed gust maximum at 10m",
             "label_units": "m s-1",
             "level": "10m",
             "long_name": "Maximum Wind Speed of Gust at 10m",
-            "plot_label": "Wind gust anomaly at 10m (m s-1)",
+            "plot_label": "Wind speed gust maximum anomaly (m s-1)",
             "standard_name": "wind_speed_of_gust",
             "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
+                "land strand 3 2km"
             ],
             "time_averaging": [
                 "max"
             ],
             "time_step": [
-                "3hr"
+                "day"
             ],
             "um_stash": "03463",
             "units": "m s-1"
