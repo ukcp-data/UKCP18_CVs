@@ -577,6 +577,24 @@
             ],
             "units": "mm/day"
         },
+        "prsnAnom": {
+            "anomaly_type": "absolute_change",
+            "description": "Snowfall flux at surface",
+            "label_units": "mm/day",
+            "long_name": "Snowfall Flux",
+            "plot_label": "Snowfall Flux (mm/day)",
+            "standard_name": "snowfall_flux",
+            "strand": [
+                "land strand 3 2km"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "units": "mm/day"
+        },
         "psl": {
             "cmip6_cmor_tables_row_id": [
                 "1235",
@@ -1165,6 +1183,24 @@
             "units": "mm"
         },
         "snw": {
+            "description": "Amount of snow on the ground",
+            "label_units": "mm",
+            "long_name": "Surface Snow Amount",
+            "plot_label": "Surface snow amount (mm)",
+            "standard_name": "surface_snow_amount",
+            "strand": [
+                "land strand 3 2km"
+            ],
+            "time_averaging": [
+                "mean"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "units": "mm"
+        },
+        "snwAnom": {
+            "anomaly_type": "absolute_change",
             "description": "Amount of snow on the ground",
             "label_units": "mm",
             "long_name": "Surface Snow Amount",
