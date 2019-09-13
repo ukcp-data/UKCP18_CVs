@@ -1,3 +1,9 @@
+# Release 1.0.4
+
+This release includes:
+* New variables prsn, prsnAnom, snw, snwAnom
+
+
 # Release 1.0.3
 
 This release includes:
