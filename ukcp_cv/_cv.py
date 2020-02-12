@@ -65,14 +65,14 @@ def _is_cv_type(cv_type):
 
 
 if __name__ == '__main__':
-    print get_cv(CV_Type.ADMIN_REGION)
+    print(get_cv(CV_Type.ADMIN_REGION))
 
     for key in CV_Type.__dict__.keys():
         if '__' not in key:
-            print key
-            print get_cv(CV_Type.__dict__[key])
+            print(key)
+            print(get_cv(CV_Type.__dict__[key]))
 
     try:
-        print get_cv('junk')
+        print(get_cv('junk'))
     except ValueError:
-        pass    
+        pass
