@@ -15,14 +15,6 @@
             ],
             "plot_label": "Total cloud (%)",
             "standard_name": "cloud_area_fraction",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -49,14 +41,6 @@
             ],
             "plot_label": "Total cloud anomaly (%)",
             "standard_name": "cloud_area_fraction",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -75,14 +59,6 @@
             "long_name": "Evaporation rate",
             "plot_label": "Evaporation rate (mm/day)",
             "standard_name": "water_evaporation_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -107,14 +83,6 @@
             ],
             "plot_label": "Lightning (1)",
             "standard_name": "lightning_flash_rate",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "accumulated"
             ],
@@ -139,14 +107,6 @@
             ],
             "plot_label": "Lightning anomaly (1)",
             "standard_name": "lightning_flash_rate",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "accumulated"
             ],
@@ -164,14 +124,6 @@
                 "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
             "plot_label": "Fog (1)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -190,14 +142,6 @@
                 "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
             "plot_label": "Fog anomaly (1)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -215,14 +159,6 @@
                 "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
             "plot_label": "Hail (Graupel) (1)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -241,14 +177,6 @@
                 "Intended we'll still do these, but as LS3 they're not a priority at present"
             ],
             "plot_label": "Hail (Graupel) anomaly (1)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -276,14 +204,6 @@
             ],
             "plot_label": "Relative humidity at 1.5m (%)",
             "standard_name": "relative_humidity",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "instantaneous",
@@ -316,14 +236,6 @@
             ],
             "plot_label": "Relative humidity anomaly at 1.5m (%)",
             "standard_name": "relative_humidity",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "instantaneous",
@@ -351,14 +263,6 @@
             "long_name": "Specific humidity",
             "plot_label": "Specific humidity at 1.5m (1)",
             "standard_name": "specific_humidity",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -386,14 +290,6 @@
             "long_name": "Specific humidity",
             "plot_label": "Specific humidity anomaly at 1.5m (%)",
             "standard_name": "specific_humidity",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -431,14 +327,6 @@
             "label_units": "m y-1",
             "long_name": "Trend in skew surge location parameter",
             "plot_label": "Trend in skew surge location parameter (m y-1)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "n/a"
             ],
@@ -467,14 +355,6 @@
                 "To be post-processed"
             ],
             "plot_label": "Potential evapotranspiration rate (mm/day)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -498,14 +378,6 @@
                 "To be post-processed"
             ],
             "plot_label": "Potential evapotranspiration rate anomaly (%)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -532,14 +404,6 @@
             ],
             "plot_label": "Precipitation rate (mm/day)",
             "standard_name": "lwe_precipitation_rate",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "mean"
@@ -570,14 +434,6 @@
             ],
             "plot_label": "Precipitation rate anomaly (%)",
             "standard_name": "lwe_precipitation_rate",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "mean"
@@ -596,14 +452,6 @@
             "long_name": "Snowfall flux",
             "plot_label": "Snowfall flux at surface (mm/day)",
             "standard_name": "snowfall_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -619,14 +467,6 @@
             "long_name": "Snowfall flux",
             "plot_label": "Snowfall flux at surface anomaly (%)",
             "standard_name": "snowfall_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -651,14 +491,6 @@
             ],
             "plot_label": "Sea level pressure (hPa)",
             "standard_name": "air_pressure_at_sea_level",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "intantaneous",
@@ -689,14 +521,6 @@
             ],
             "plot_label": "Sea level pressure anomaly (hPa)",
             "standard_name": "air_pressure_at_sea_level",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "intantaneous",
@@ -719,14 +543,6 @@
             ],
             "plot_label": "Vapour pressure (hPa)",
             "standard_name": "water_vapor_partial_pressure_in_air",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA"
             ],
@@ -745,14 +561,6 @@
             ],
             "plot_label": "Vapour pressure anomaly (hPa)",
             "standard_name": "water_vapor_partial_pressure_in_air",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA"
             ],
@@ -766,14 +574,6 @@
             "label_units": "mm",
             "long_name": "Rainfall accumulation",
             "plot_label": "Max. 5-day accumulative rainfall (mm)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "total"
             ],
@@ -789,14 +589,6 @@
             "label_units": "%",
             "long_name": "Rainfall accumulation",
             "plot_label": "Max. 5-day accumulative rainfall anomaly (%)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "total"
             ],
@@ -819,14 +611,6 @@
             "long_name": "Net Surface long wave flux",
             "plot_label": "Net Surface long wave flux (W m-2)",
             "standard_name": "surface_net_downward_longwave_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -852,14 +636,6 @@
             "long_name": "Net Surface long wave flux",
             "plot_label": "Net Surface long wave flux anomaly (W m-2)",
             "standard_name": "surface_net_downward_longwave_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -885,14 +661,6 @@
             ],
             "plot_label": "Total downward shortwave flux (W m-2)",
             "standard_name": "surface_downwelling_shortwave_flux_in_air",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -917,14 +685,6 @@
             ],
             "plot_label": "Total downward shortwave flux anomaly (W m-2)",
             "standard_name": "surface_downwelling_shortwave_flux_in_air",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -947,14 +707,6 @@
             "long_name": "Net Surface short wave flux",
             "plot_label": "Net Surface short wave flux (W m-2)",
             "standard_name": "surface_net_downward_shortwave_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -980,14 +732,6 @@
             "long_name": "Net Surface short wave flux",
             "plot_label": "Net Surface short wave flux anomaly (W m-2)",
             "standard_name": "surface_net_downward_shortwave_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1009,14 +753,6 @@
             ],
             "plot_label": "Surface evaporation at Surface (mm/day)",
             "standard_name": "surface_upward_water_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1036,14 +772,6 @@
             ],
             "plot_label": "Surface evaporation anomaly at Surface ()",
             "standard_name": "surface_upward_water_flux",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1058,10 +786,6 @@
             "label_units": "m",
             "long_name": "Local time-mean relative sea level anomaly",
             "plot_label": "Time-mean sea level anomaly (m)",
-            "strand": [
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous"
             ],
@@ -1089,14 +813,6 @@
             ],
             "plot_label": "Wind speed at 10m (m s-1)",
             "standard_name": "wind_speed",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "instantaneous",
@@ -1130,14 +846,6 @@
             ],
             "plot_label": "Wind speed anomaly at 10m (m s-1)",
             "standard_name": "wind_speed",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "instantaneous",
@@ -1156,9 +864,6 @@
             "label_units": "m y-1",
             "long_name": "21st century Trend in extreme still water level due to storminess change alone",
             "plot_label": "21st century Trend in extreme still water level due to storminess change alone (m y-1)",
-            "strand": [
-                "observations"
-            ],
             "time_averaging": [
                 "average rate over 2007-2099"
             ],
@@ -1179,14 +884,6 @@
             "long_name": "Snow depth",
             "plot_label": "Snow depth (mm)",
             "standard_name": "surface_snow_thickness",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "day",
                 "mon"
@@ -1207,14 +904,6 @@
             "long_name": "Snow depth",
             "plot_label": "Snow depth anomaly (mm)",
             "standard_name": "surface_snow_thickness",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "day",
                 "mon"
@@ -1228,14 +917,6 @@
             "long_name": "Surface snow amount",
             "plot_label": "Amount of snow on the ground (mm)",
             "standard_name": "surface_snow_amount",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1251,14 +932,6 @@
             "long_name": "Surface snow amount",
             "plot_label": "Amount of snow on the ground anomaly (mm)",
             "standard_name": "surface_snow_amount",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1276,14 +949,6 @@
             ],
             "plot_label": "Sea surface elevation above the mean level (m)",
             "standard_name": "sea_surface_height_above_mean_sea_level",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "1hr"
             ],
@@ -1299,14 +964,6 @@
             ],
             "plot_label": "Sea surface elevation above the mean level anomaly (m)",
             "standard_name": "sea_surface_height_above_mean_sea_level",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "1hr"
             ],
@@ -1320,14 +977,6 @@
                 "Return level to be plotted against return period. Log scale for return period. How will uncertainty be made available? Separate variable?"
             ],
             "plot_label": "Still water return level (m)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "n/a"
             ],
@@ -1342,14 +991,6 @@
             ],
             "plot_label": "Sunshine hours (h)",
             "standard_name": "duration_of_sunshine",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "total"
             ],
@@ -1368,14 +1009,6 @@
             ],
             "plot_label": "Sunshine hours anomaly (h)",
             "standard_name": "duration_of_sunshine",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "total"
             ],
@@ -1389,10 +1022,6 @@
             "label_units": "m",
             "long_name": "Sea water level",
             "plot_label": "Mean sea level (m)",
-            "strand": [
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1407,10 +1036,6 @@
             "label_units": "m",
             "long_name": "Sea water level",
             "plot_label": "Mean sea level anomaly (m)",
-            "strand": [
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1428,14 +1053,6 @@
             "long_name": "Air Temperature",
             "plot_label": "Air temperature at 250hPa (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "?"
             ],
@@ -1454,14 +1071,6 @@
             "long_name": "Air Temperature",
             "plot_label": "Air temperature anomaly at 250hPa (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "?"
             ],
@@ -1479,14 +1088,6 @@
             "long_name": "Air Temperature",
             "plot_label": "Air temperature at 500hPa (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "?"
             ],
@@ -1505,14 +1106,6 @@
             "long_name": "Air Temperature",
             "plot_label": "Air temperature anomaly at 500hPa (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "?"
             ],
@@ -1530,14 +1123,6 @@
             "long_name": "Air Temperature",
             "plot_label": "Air temperature at 850hPa (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "?"
             ],
@@ -1556,14 +1141,6 @@
             "long_name": "Air Temperature",
             "plot_label": "Air temperature anomaly at 850hPa (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "?"
             ],
@@ -1589,14 +1166,6 @@
             ],
             "plot_label": "Mean air temperature at 1.5m (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "instantaneous",
@@ -1628,14 +1197,6 @@
             ],
             "plot_label": "Mean air temperature anomaly at 1.5m (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "instantaneous",
@@ -1665,14 +1226,6 @@
             ],
             "plot_label": "Maximum air temperature at 1.5m (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "max"
@@ -1701,14 +1254,6 @@
             ],
             "plot_label": "Maximum air temperature anomaly at 1.5m (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "max"
@@ -1727,14 +1272,6 @@
             "long_name": "Maximum air temperature on the hottest day",
             "plot_label": "Maximum air temperature on the hottest day at 1.5m (°C)",
             "standard_name": "air temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1752,14 +1289,6 @@
             "long_name": "Maximum air temperature on the hottest day",
             "plot_label": "Maximum air temperature on the hottest day anomaly at 1.5m (°C)",
             "standard_name": "air temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1785,14 +1314,6 @@
             ],
             "plot_label": "Minimum air temperature at 1.5m (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "min"
@@ -1821,14 +1342,6 @@
             ],
             "plot_label": "Minimum air temperature anomaly at 1.5m (°C)",
             "standard_name": "air_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "LTA",
                 "min"
@@ -1847,14 +1360,6 @@
             "label_units": "m",
             "long_name": "Sea surface height above mean sea level due to modelled astronomical tide only",
             "plot_label": "Sea surface elevation (tide) anomaly (m)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "15min",
                 "1hr",
@@ -1869,14 +1374,6 @@
             "label_units": "m",
             "long_name": "Sea surface height above mean sea level due to modelled astronomical tide and meteorological surge",
             "plot_label": "Sea surface elevation (tide and surge) anomaly (m)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "15min",
                 "1hr",
@@ -1892,14 +1389,6 @@
             "long_name": "Sea surface temperature",
             "plot_label": "Sea surface temperature (°C)",
             "standard_name": "sea_surface_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1917,14 +1406,6 @@
             "long_name": "Sea surface temperature",
             "plot_label": "Sea surface temperature anomaly (°C)",
             "standard_name": "sea_surface_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "mean"
             ],
@@ -1938,14 +1419,6 @@
             "label_units": "m",
             "long_name": "???",
             "plot_label": "Target protection level (m)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "use-by date"
             ],
@@ -1957,14 +1430,6 @@
             "label_units": "m",
             "long_name": "???",
             "plot_label": "Target protection level anomaly (m)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "use-by date"
             ],
@@ -1988,14 +1453,6 @@
             "long_name": "Wet bulb temperature",
             "plot_label": "Wet bulb temperature at 1.5 m??? (°C)",
             "standard_name": "wet_bulb_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -2015,14 +1472,6 @@
             "long_name": "Wet bulb temperature",
             "plot_label": "Wet bulb temperature anomaly at 1.5 m??? (°C)",
             "standard_name": "wet_bulb_temperature",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -2047,14 +1496,6 @@
             "long_name": "Eastward wind component",
             "plot_label": "Eastward wind at 10m (m s-1)",
             "standard_name": "eastward_wind",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -2080,14 +1521,6 @@
             "long_name": "Eastward wind component",
             "plot_label": "Eastward wind anomaly at 10m (m s-1)",
             "standard_name": "eastward_wind",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -2112,14 +1545,6 @@
             "long_name": "Northward wind component",
             "plot_label": "Northward wind at 10m (m s-1)",
             "standard_name": "northward_wind",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -2145,14 +1570,6 @@
             "long_name": "Northward wind component",
             "plot_label": "Northward wind anomaly at 10m (m s-1)",
             "standard_name": "northward_wind",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "instantaneous",
                 "mean"
@@ -2169,14 +1586,6 @@
             "label_units": "1",
             "long_name": "Wettest day",
             "plot_label": "Wettest day (1)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "total"
             ],
@@ -2191,14 +1600,6 @@
             "description": "Wettest day",
             "long_name": "Wettest day",
             "plot_label": "Wettest day anomaly ()",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "total"
             ],
@@ -2213,14 +1614,6 @@
             "level": "10m",
             "long_name": "Direction of wind at 10m",
             "plot_label": "Wind direction at 10m (degrees)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "day"
             ],
@@ -2233,14 +1626,6 @@
             "level": "10m",
             "long_name": "Direction of wind at 10m",
             "plot_label": "Wind direction anomaly at 10m (degrees)",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_step": [
                 "day"
             ],
@@ -2258,14 +1643,6 @@
             "long_name": "Maximum Wind Speed of Gust at 10m",
             "plot_label": "Wind speed gust maximum at 10m (m s-1)",
             "standard_name": "wind_speed_of_gust",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "max"
             ],
@@ -2288,14 +1665,6 @@
             "long_name": "Maximum Wind Speed of Gust at 10m",
             "plot_label": "Wind speed gust maximum anomaly at 10m (m s-1)",
             "standard_name": "wind_speed_of_gust",
-            "strand": [
-                "land strand 1",
-                "land strand 2",
-                "land strand 3 12km",
-                "land strand 3 2km",
-                "marine",
-                "observations"
-            ],
             "time_averaging": [
                 "max"
             ],

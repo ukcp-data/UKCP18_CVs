@@ -79,7 +79,7 @@ def make_dict_from_sheet(spreadsheet):
     for row in spreadsheet:
         if len(row) < 2:
             continue
-        
+
         key = row[id_column].strip()
         if key in data.keys():
             data[key].append(row)
@@ -95,7 +95,6 @@ def process_data(data):
     @return a dict
     """
     variable = {}
-    strand = set()
     time_step = set()
     time_averaging = set()
     notes = set()
@@ -132,20 +131,20 @@ def process_data(data):
             variable['description'] = row[col_description]
             variable['plot_label'] = row[col_plot_label]
 
-            if (row[col_standard_name] != "" and
-                    row[col_standard_name] != "None"):
-                variable['standard_name'] = row[col_standard_name]
             if (row[col_anomaly_type] != "" and
                     row[col_anomaly_type] != "none"):
                 variable['anomaly_type'] = row[col_anomaly_type]
-            if row[col_units] != "":
-                variable['units'] = row[col_units]
-            if row[col_label_units] != "":
-                variable['label_units'] = row[col_label_units].encode('utf-8')
-            if row[col_level] != "":
-                variable['level'] = row[col_level]
 
             try:
+                if (row[col_standard_name] != "" and
+                        row[col_standard_name] != "None"):
+                    variable['standard_name'] = row[col_standard_name]
+                if row[col_units] != "":
+                    variable['units'] = row[col_units]
+                if row[col_label_units] != "":
+                    variable['label_units'] = row[col_label_units].encode('utf-8')
+                if row[col_level] != "":
+                    variable['level'] = row[col_level]
                 if (row[col_cmip6_var_id] != "" and
                         row[col_cmip6_var_id] != "None"):
                     variable['cmip6_name'] = row[col_cmip6_var_id]
@@ -160,22 +159,10 @@ def process_data(data):
         # now sort out the differences between rows
         if row[col_time_step] != "":
             time_step.add(row[col_time_step])
-        if row[col_time_averaging] != "":
-            time_averaging.add(row[col_time_averaging])
 
         try:
-            if row[col_observations] is not None:
-                strand.add('observations')
-            if row[col_marine] is not None:
-                strand.add('marine')
-            if row[col_land_strand_1] is not None:
-                strand.add('land strand 1')
-            if row[col_land_strand_2] is not None:
-                strand.add('land strand 2')
-            if row[col_land_strand_3_12km] is not None:
-                strand.add('land strand 3 12km')
-            if row[col_land_strand_3_2km] is not None:
-                strand.add('land strand 3 2km')
+            if row[col_time_averaging] != "":
+                time_averaging.add(row[col_time_averaging])
 
             if row[col_notes] != "":
                 notes.add(row[col_notes])
@@ -190,8 +177,6 @@ def process_data(data):
         variable['time_step'] = sorted(list(time_step))
     if len(time_averaging) > 0:
         variable['time_averaging'] = sorted(list(time_averaging))
-    if len(strand) > 0:
-        variable['strand'] = sorted(list(strand))
     if len(notes) > 0:
         variable['notes'] = sorted(list(notes))
     if len(cmip6_cmor_tables_row_id) > 0:
@@ -242,15 +227,15 @@ false_northing = -100000. ;
 scale_factor_at_central_meridian = 0.9996012717 ;
     """
     tv = {"grid_mapping_name": "transverse_mercator",
-        "longitude_of_prime_meridian": 0.,
-        "semi_major_axis": 6377563.396, 
-        "semi_minor_axis": 6356256.909,
-        "longitude_of_central_meridian": -2.,
-        "latitude_of_projection_origin": 49.,
-        "false_easting": 400000.,
-        "false_northing": -100000., 
-        "scale_factor_at_central_meridian": 0.9996012717, 
-    }
+          "longitude_of_prime_meridian": 0.,
+          "semi_major_axis": 6377563.396,
+          "semi_minor_axis": 6356256.909,
+          "longitude_of_central_meridian": -2.,
+          "latitude_of_projection_origin": 49.,
+          "false_easting": 400000.,
+          "false_northing": -100000.,
+          "scale_factor_at_central_meridian": 0.9996012717,
+          }
     variables['transverse_mercator'] = tv
 
 
