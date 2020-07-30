@@ -307,8 +307,11 @@
             "label_units": "m s-1",
             "long_name": "Latitude of eddy-driven jet",
             "plot_label": "Jet stream latitude (m s-1)",
+            "time_averaging": [
+                "5-day rolling average"
+            ],
             "time_step": [
-                "5-day rolling window"
+                "day"
             ],
             "units": "m s-1"
         },
@@ -317,8 +320,11 @@
             "label_units": "degrees latitude",
             "long_name": "Strength of eddy-driven jet",
             "plot_label": "Jet stream strength (degrees latitude)",
+            "time_averaging": [
+                "5-day rolling average"
+            ],
             "time_step": [
-                "5-day rolling window"
+                "day"
             ],
             "units": "degrees"
         },
@@ -334,13 +340,13 @@
         },
         "naodjf": {
             "description": "Average DJF pressure gradient between Gibraltar and Iceland",
-            "label_units": "Pa",
+            "label_units": "hPa",
             "long_name": "Winter atlantic pressure gradient",
-            "plot_label": "Average DJF pressure gradient between Gibraltar and Iceland (Pa)",
+            "plot_label": "Average DJF pressure gradient between Gibraltar and Iceland (hPa)",
             "time_step": [
-                "none"
+                "annual"
             ],
-            "units": "Pa"
+            "units": "hPa"
         },
         "pet": {
             "cmip6_cmor_tables_row_id": [
@@ -1676,19 +1682,23 @@
         },
         "wtype30": {
             "description": "Weather type of 30",
+            "label_units": "1",
             "long_name": "Weather type of 30",
             "plot_label": "Weather type of 30",
             "time_step": [
-                "none"
-            ]
+                "day"
+            ],
+            "units": "1"
         },
         "wtype8": {
             "description": "Weather type of 8",
+            "label_units": "1",
             "long_name": "Weather type of 8",
             "plot_label": "Weather type of 8",
             "time_step": [
-                "none"
-            ]
+                "day"
+            ],
+            "units": "1"
         }
     }
 }
