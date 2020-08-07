@@ -304,22 +304,9 @@
         },
         "jetlat": {
             "description": "Jet stream latitude",
-            "label_units": "m s-1",
-            "long_name": "Latitude of eddy-driven jet",
-            "plot_label": "Jet stream latitude (m s-1)",
-            "time_averaging": [
-                "5-day rolling average"
-            ],
-            "time_step": [
-                "day"
-            ],
-            "units": "m s-1"
-        },
-        "jetstr": {
-            "description": "Jet stream strength",
             "label_units": "degrees latitude",
-            "long_name": "Strength of eddy-driven jet",
-            "plot_label": "Jet stream strength (degrees latitude)",
+            "long_name": "Latitude of eddy-driven jet",
+            "plot_label": "Jet stream latitude (degress latitude)",
             "time_averaging": [
                 "5-day rolling average"
             ],
@@ -327,6 +314,19 @@
                 "day"
             ],
             "units": "degrees"
+        },
+        "jetstr": {
+            "description": "Jet stream strength",
+            "label_units": "m s-1",
+            "long_name": "Strength of eddy-driven jet",
+            "plot_label": "Jet stream strength (m s-1)",
+            "time_averaging": [
+                "5-day rolling average"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "units": "m s-1"
         },
         "locParamTrend": {
             "description": "Trend in skew surge location parameter",
@@ -344,7 +344,7 @@
             "long_name": "Winter atlantic pressure gradient",
             "plot_label": "Average DJF pressure gradient between Gibraltar and Iceland (hPa)",
             "time_step": [
-                "annual"
+                "ann"
             ],
             "units": "hPa"
         },
