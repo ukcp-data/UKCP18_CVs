@@ -306,7 +306,7 @@
             "description": "Jet stream latitude",
             "label_units": "degrees latitude",
             "long_name": "Latitude of eddy-driven jet",
-            "plot_label": "Jet stream latitude (degress latitude)",
+            "plot_label": "Jet stream latitude (degrees latitude)",
             "time_averaging": [
                 "5-day rolling average"
             ],
