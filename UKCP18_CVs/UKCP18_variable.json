@@ -422,6 +422,56 @@
             "um_stash": "05216",
             "units": "mm/day"
         },
+        "pr1day": {
+            "cmip6_name": "pr1day",
+            "description": "1-day total precipitation",
+            "label_units": "mm",
+            "long_name": "Precipitation",
+            "plot_label": "1-day total precipitation (mm)",
+            "standard_name": "precipitation_amount",
+            "time_step": [
+                "day"
+            ],
+            "units": "mm"
+        },
+        "pr1dayAnom": {
+            "anomaly_type": "percentage_change",
+            "cmip6_name": "pr1day",
+            "description": "1-day total precipitation",
+            "label_units": "%",
+            "long_name": "Precipitation",
+            "plot_label": "1-day total precipitation anomaly (%)",
+            "standard_name": "precipitation_amount",
+            "time_step": [
+                "day"
+            ],
+            "units": "mm"
+        },
+        "pr5day": {
+            "cmip6_name": "pr5day",
+            "description": "5-day total precipitation",
+            "label_units": "mm",
+            "long_name": "Precipitation",
+            "plot_label": "5-day total precipitation (mm)",
+            "standard_name": "precipitation_amount",
+            "time_step": [
+                "5day"
+            ],
+            "units": "mm"
+        },
+        "pr5dayAnom": {
+            "anomaly_type": "percentage_change",
+            "cmip6_name": "pr5day",
+            "description": "5-day total precipitation",
+            "label_units": "%",
+            "long_name": "Precipitation",
+            "plot_label": "5-day total precipitation anomaly (%)",
+            "standard_name": "precipitation_amount",
+            "time_step": [
+                "5day"
+            ],
+            "units": "mm"
+        },
         "prAnom": {
             "anomaly_type": "percentage_change",
             "cmip6_cmor_tables_row_id": [
