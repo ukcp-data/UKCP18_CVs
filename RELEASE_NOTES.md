@@ -1,3 +1,8 @@
+# Release 1.0.5
+
+This release includes:
+* New variables jetlat, jetstr, naodjf, pr1day, pr5day
+
 # Release 1.0.4
 
 This release includes:
