@@ -234,7 +234,7 @@
                 "Post-process from instantaneous temp and spec humidity",
                 "Use WPS for LS1-3"
             ],
-            "plot_label": "Relative humidity percentage change anomaly at 1.5m (%)",
+            "plot_label": "Relative humidity percentage change anomaly at 1.5m",
             "standard_name": "relative_humidity",
             "time_averaging": [
                 "LTA",
@@ -288,7 +288,7 @@
             "label_units": "%",
             "level": "1.5m",
             "long_name": "Specific humidity",
-            "plot_label": "Specific humidity percentage change anomaly at 1.5m (%)",
+            "plot_label": "Specific humidity percentage change anomaly at 1.5m",
             "standard_name": "specific_humidity",
             "time_averaging": [
                 "instantaneous",
