@@ -5,6 +5,7 @@
         "land-gcm": "Global simulations",
         "land-prob": "Land probabilistic projections",
         "land-rcm": "Regional simulations",
+        "land-rcm-gwl": "Regional simulations, global warming level",
         "marine-sim": "Marine simulations",
         "land-obs": "Land observations"
     },
