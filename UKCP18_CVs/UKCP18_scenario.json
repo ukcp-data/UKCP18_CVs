@@ -6,6 +6,7 @@
         "rcp85": "RCP 8.5",
         "sres-a1b": "SRES A1B",
         "gwl2": "Global warming level of 2°C",
+        "gwl3": "Global warming level of 3°C",
         "gwl4": "Global warming level of 4°C"
     },
     "version_metadata": {
