@@ -1,3 +1,10 @@
+# Release 1.0.7
+
+This release includes:
+* Add collection "Regional simulations, global warming level"
+* Add scenario "Global warming level of 3°C"
+
+
 # Release 1.0.6
 
 This release includes:
