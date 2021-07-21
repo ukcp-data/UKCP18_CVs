@@ -39,8 +39,7 @@ setup(
     include_package_data = True,
     scripts=[],
     entry_points = {},
-    package_data = {},
-    data_files = [('UKCP18_CVs', [
+    package_data = {'UKCP18_CVs': [
             'UKCP18_CVs/UKCP18_activity_id.json',
             'UKCP18_CVs/UKCP18_admin_region.json',
             'UKCP18_CVs/UKCP18_baseline_period.json',
@@ -65,5 +64,5 @@ setup(
             'UKCP18_CVs/UKCP18_time_slice_30y.json',
             'UKCP18_CVs/UKCP18_time_slice_type.json',
             'UKCP18_CVs/UKCP18_variable.json'
-            ])]
+            ]}
 )

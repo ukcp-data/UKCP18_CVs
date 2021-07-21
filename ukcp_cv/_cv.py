@@ -46,7 +46,7 @@ def get_cv(cv_type):
         raise ValueError('Invalid CV_Type: {}'.format(cv_type))
 
     base_path = path.abspath(path.dirname(__file__))
-    file_name = '../UKCP18_CVs/UKCP18_{}.json'.format(cv_type)
+    file_name = 'UKCP18_CVs/UKCP18_{}.json'.format(cv_type)
 
     cv_file = path.join(base_path, file_name)
 
