@@ -40,7 +40,7 @@ setup(
     scripts=[],
     entry_points = {},
     package_data = {},
-    data_files = [(os.path.join(site.USER_SITE, 'UKCP18_CVs'), [
+    data_files = [('UKCP18_CVs', [
             'UKCP18_CVs/UKCP18_activity_id.json',
             'UKCP18_CVs/UKCP18_admin_region.json',
             'UKCP18_CVs/UKCP18_baseline_period.json',
