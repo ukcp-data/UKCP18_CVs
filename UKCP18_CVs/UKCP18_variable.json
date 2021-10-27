@@ -654,6 +654,21 @@
             "um_stash": "05216",
             "units": "%"
         },
+        "rainfall": {
+            "description": "Total rainfall",
+            "label_units": "mm",
+            "long_name": "Total rainfall",
+            "plot_label": "Total rainfall (mm)",
+            "time_averaging": [
+                "total"
+            ],
+            "time_step": [
+                "annual",
+                "mon",
+                "seas"
+            ],
+            "units": "mm"
+        },
         "rls": {
             "cmip6_cmor_tables_row_id": [
                 "1317",

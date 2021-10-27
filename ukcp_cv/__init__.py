@@ -1,4 +1,4 @@
-__version__ = '1.0.7'
+__version__ = '1.0.8'
 
 from ukcp_cv._cv import CV_Type, get_cv
 
