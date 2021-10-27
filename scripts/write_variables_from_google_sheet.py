@@ -142,7 +142,7 @@ def process_data(data):
                 if row[col_units] != "":
                     variable['units'] = row[col_units]
                 if row[col_label_units] != "":
-                    variable['label_units'] = row[col_label_units].encode('utf-8')
+                    variable['label_units'] = row[col_label_units]
                 if row[col_level] != "":
                     variable['level'] = row[col_level]
                 if (row[col_cmip6_var_id] != "" and
@@ -200,9 +200,8 @@ def main():
     variable_json = '../UKCP18_CVs/UKCP18_variable.json'
     with io.open(variable_json, 'w', encoding='utf8') as json_file:
         data = json.dumps(output, sort_keys=True, indent=4,
-                          separators=(',', ': '), ensure_ascii=False,
-                          encoding='utf8')
-        json_file.write(unicode(data))
+                          separators=(',', ': '), ensure_ascii=False)
+        json_file.write(data)
 
     print('Wrote new version of: {}'.format(variable_json))
 
