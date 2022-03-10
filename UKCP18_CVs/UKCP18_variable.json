@@ -151,6 +151,27 @@
             "um_stash": "03248",
             "units": "1"
         },
+        "groundfrost": {
+            "description": "Days of ground frost",
+            "label_units": "days",
+            "long_name": "Ground frost",
+            "plot_label": "Days of ground frost (days)",
+            "time_step": [
+                "day"
+            ],
+            "units": "days"
+        },
+        "groundfrostAnom": {
+            "anomaly_type": "absolute_change",
+            "description": "Days of ground frost",
+            "label_units": "days",
+            "long_name": "Ground frost",
+            "plot_label": "Days of ground frost anomaly (days)",
+            "time_step": [
+                "day"
+            ],
+            "units": "days"
+        },
         "hail": {
             "description": "Hail (Graupel)",
             "label_units": "1",
@@ -983,33 +1004,31 @@
             "units": "mm"
         },
         "snowLying": {
-            "description": "Depth of snow lying on the ground",
-            "label_units": "mm",
+            "description": "Days of snow lying",
+            "label_units": "days",
             "long_name": "Snow lying",
-            "plot_label": "Depth of snow lying on the ground (mm)",
-            "standard_name": "surface_snow_binary_mask",
+            "plot_label": "Days of snow lying (days)",
             "time_averaging": [
                 "LTA"
             ],
             "time_step": [
                 "day"
             ],
-            "units": "mm"
+            "units": "days"
         },
         "snowLyingAnom": {
             "anomaly_type": "absolute_change",
-            "description": "Depth of snow lying on the ground",
-            "label_units": "mm",
+            "description": "Days of snow lying",
+            "label_units": "days",
             "long_name": "Snow lying",
-            "plot_label": "Depth of snow lying on the ground anomaly (mm)",
-            "standard_name": "surface_snow_binary_mask",
+            "plot_label": "Days of snow lying anomaly (days)",
             "time_averaging": [
                 "LTA"
             ],
             "time_step": [
                 "day"
             ],
-            "units": "mm"
+            "units": "days"
         },
         "snw": {
             "description": "Amount of snow on the ground",
