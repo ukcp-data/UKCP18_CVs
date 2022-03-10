@@ -982,6 +982,35 @@
             "um_stash": "00376",
             "units": "mm"
         },
+        "snowLying": {
+            "description": "Depth of snow lying on the ground",
+            "label_units": "mm",
+            "long_name": "Snow lying",
+            "plot_label": "Depth of snow lying on the ground (mm)",
+            "standard_name": "surface_snow_binary_mask",
+            "time_averaging": [
+                "LTA"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "units": "mm"
+        },
+        "snowLyingAnom": {
+            "anomaly_type": "absolute_change",
+            "description": "Depth of snow lying on the ground",
+            "label_units": "mm",
+            "long_name": "Snow lying",
+            "plot_label": "Depth of snow lying on the ground anomaly (mm)",
+            "standard_name": "surface_snow_binary_mask",
+            "time_averaging": [
+                "LTA"
+            ],
+            "time_step": [
+                "day"
+            ],
+            "units": "mm"
+        },
         "snw": {
             "description": "Amount of snow on the ground",
             "label_units": "mm",
