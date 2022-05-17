@@ -1,0 +1,38 @@
+{
+	"ensemble_short_name": {
+		"01": "00000",
+		"02": "00605",
+		"03": "00834",
+		"04": "01113",
+		"05": "01554",
+		"06": "01649",
+		"07": "01843",
+		"08": "01935",
+		"09": "02123",
+		"10": "02242",
+		"11": "02305",
+		"12": "02335",
+		"13": "02491",
+		"14": "02832",
+		"15": "02868",
+		"16": "bcc-csm1-1",
+		"17": "CCSM4",
+		"18": "CESM1-BGC",
+		"19": "CanESM2",
+		"20": "CMCC-CM",
+		"21": "CNRM-CM5",
+		"22": "EC-EARTH",
+		"23": "ACCESS1-3",
+		"24": "HadGEM2-ES",
+		"25": "IPSL-CM5A-MR",
+		"26": "MPI-ESM-MR",
+		"27": "MRI-CGCM3",
+		"28": "GFDL-ESM2G"
+	},
+	"version_metadata": {
+		"author": "Antony Wilson <antony.wilson@stfc.ac.uk>",
+		"creation_date": "2022-05-17 13:59:07.837381",
+		"institution_id": "STFC",
+		"previous_commit": ""
+	}
+}
