@@ -1,3 +1,9 @@
+# Release 1.0.10
+
+This release includes:
+* The addition of 'standard_name' and 'levels' to a number of variables
+
+
 # Release 1.0.9
 
 This release includes:
