@@ -154,8 +154,10 @@
         "groundfrost": {
             "description": "Days of ground frost",
             "label_units": "days",
+            "level": "NA",
             "long_name": "Ground frost",
             "plot_label": "Days of ground frost (days)",
+            "standard_name": "None",
             "time_step": [
                 "day"
             ],
@@ -165,8 +167,10 @@
             "anomaly_type": "absolute_change",
             "description": "Days of ground frost",
             "label_units": "days",
+            "level": "NA",
             "long_name": "Ground frost",
             "plot_label": "Days of ground frost anomaly (days)",
+            "standard_name": "None",
             "time_step": [
                 "day"
             ],
@@ -562,6 +566,7 @@
             "cmip6_standard_name": "air_pressure_at_sea_level",
             "description": "Sea level pressure",
             "label_units": "hPa",
+            "level": "NA",
             "long_name": "Pressure at mean sea level",
             "notes": [
                 "Use WPS for LS1-3"
@@ -592,6 +597,7 @@
             "cmip6_standard_name": "air_pressure_at_sea_level",
             "description": "Sea level pressure",
             "label_units": "hPa",
+            "level": "NA",
             "long_name": "Pressure at mean sea level",
             "notes": [
                 "Use WPS for LS1-3"
@@ -614,6 +620,7 @@
         "pv": {
             "description": "Vapour pressure",
             "label_units": "hPa",
+            "level": "NA",
             "long_name": "partial pressure of water vapour",
             "notes": [
                 "Obs availability TBC"
@@ -632,6 +639,7 @@
             "anomaly_type": "absolute_change",
             "description": "Vapour pressure",
             "label_units": "hPa",
+            "level": "NA",
             "long_name": "partial pressure of water vapour",
             "notes": [
                 "Obs availability TBC"
@@ -678,8 +686,10 @@
         "rainfall": {
             "description": "Total rainfall",
             "label_units": "mm",
+            "level": "NA",
             "long_name": "Total rainfall",
             "plot_label": "Total rainfall (mm)",
+            "standard_name": "None",
             "time_averaging": [
                 "total"
             ],
@@ -1006,8 +1016,10 @@
         "snowLying": {
             "description": "Days of snow lying",
             "label_units": "days",
+            "level": "NA",
             "long_name": "Snow lying",
             "plot_label": "Days of snow lying (days)",
+            "standard_name": "None",
             "time_averaging": [
                 "LTA"
             ],
@@ -1020,8 +1032,10 @@
             "anomaly_type": "absolute_change",
             "description": "Days of snow lying",
             "label_units": "days",
+            "level": "NA",
             "long_name": "Snow lying",
             "plot_label": "Days of snow lying anomaly (days)",
+            "standard_name": "None",
             "time_averaging": [
                 "LTA"
             ],
@@ -1104,6 +1118,7 @@
         "sun": {
             "description": "Sunshine hours",
             "label_units": "h",
+            "level": "NA",
             "long_name": "Sunshine hours",
             "notes": [
                 "Post-process from total cloud cover for LS2-3"
@@ -1122,6 +1137,7 @@
             "anomaly_type": "absolute_change",
             "description": "Sunshine hours",
             "label_units": "h",
+            "level": "NA",
             "long_name": "Sunshine hours",
             "notes": [
                 "Post-process from total cloud cover for LS2-3"
