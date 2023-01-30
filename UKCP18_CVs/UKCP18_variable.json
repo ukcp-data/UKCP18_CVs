@@ -1102,6 +1102,20 @@
             ],
             "units": "m"
         },
+        "extremeSeaLevel": {
+            "description": "Extreme sea level",
+            "label_units": "m",
+            "long_name": "Extreme sea levell",
+            "notes": [
+                "Return level to be plotted against return period. Log scale for return period. How will uncertainty be made available? Separate variable?"
+            ],
+            "plot_label": "Extreme sea level (m)",
+            "time_step": [
+                "n/a"
+            ],
+            "units": "m"
+        },
+
         "stillWaterReturnLevel": {
             "description": "Still water return level",
             "label_units": "m",
@@ -1115,6 +1129,7 @@
             ],
             "units": "m"
         },
+
         "sun": {
             "description": "Sunshine hours",
             "label_units": "h",
