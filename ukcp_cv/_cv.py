@@ -50,7 +50,7 @@ def get_cv(cv_type):
 
     cv_file = path.join(base_path, file_name)
 
-    with open(cv_file) as json_data:
+    with open(cv_file, encoding="utf-8") as json_data:
         cvs = json.load(json_data)
 
     return cvs
