@@ -1,5 +1,17 @@
 {
     "variable": {
+        "airfrost": {
+            "description": "Days of minimum air temperature < 0°C",
+            "label_units": "days",
+            "level": "1.5m",
+            "long_name": "Days of air frost",
+            "plot_label": "Days of minimum air temperature < 0°C (days)",
+            "standard_name": "number_of_days_with_air_temperature_below_threshold",
+            "time_step": [
+                "mon"
+            ],
+            "units": "days"
+        },
         "clt": {
             "cmip6_cmor_tables_row_id": [
                 "206",
@@ -683,6 +695,30 @@
             "um_stash": "05216",
             "units": "%"
         },
+        "raindays1mm": {
+            "description": "Days of rainfall >= 1mm",
+            "label_units": "days",
+            "level": "NA",
+            "long_name": "Days of rainfall >= 1mm",
+            "plot_label": "Days of rainfall >= 1mm (days)",
+            "standard_name": "number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold",
+            "time_step": [
+                "mon"
+            ],
+            "units": "days"
+        },
+        "raindays10mm": {
+            "description": "Days of rainfall >= 10mm",
+            "label_units": "days",
+            "level": "NA",
+            "long_name": "Days of rain >= 10mm",
+            "plot_label": "Days of rainfall >= 10mm (days)",
+            "standard_name": "number_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold",
+            "time_step": [
+                "mon"
+            ],
+            "units": "days"
+        },
         "rainfall": {
             "description": "Total rainfall",
             "label_units": "mm",
@@ -1130,6 +1166,18 @@
             "units": "m"
         },
 
+        "summerdays": {
+            "description": "Days of maximum air temperature >= 25°C",
+            "label_units": "days",
+            "level": "1.5m",
+            "long_name": "Summer days",
+            "plot_label": "Days of maximum air temperature >= 25°C (days)",
+            "standard_name": "number_of_days_with_air_temperature_above_threshold",
+            "time_step": [
+                "mon"
+            ],
+            "units": "days"
+        },
         "sun": {
             "description": "Sunshine hours",
             "label_units": "h",
